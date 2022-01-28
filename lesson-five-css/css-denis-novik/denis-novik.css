@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-font-family: "Open Sans", sans-serif;
+  --main-text-color: rgb(0, 0, 0);
+  --additional-text-color: rgb(130, 130, 130);
+  --message-color: rgb(255, 255, 255);
+}
+
+
