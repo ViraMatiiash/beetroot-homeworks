@@ -76,6 +76,10 @@ li {
   border-bottom: 1px solid var(--link-hover-color);
 }
 
+.my-hobbies {
+    margin-bottom: 3em;
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -92,6 +96,10 @@ li {
 .social-networks,
 .contacts {
   margin: 1em 3em 0;
+}
+
+.contacts {
+    margin-bottom: 3em;
 }
 
 .sidebar-heading {
