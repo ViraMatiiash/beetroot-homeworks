@@ -8,10 +8,82 @@
 }
 
 :root {
-  --main-font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
   --main-text-color: rgb(0, 0, 0);
   --additional-text-color: rgb(130, 130, 130);
   --message-color: rgb(255, 255, 255);
 }
 
+a {
+  text-decoration: none;
+}
 
+ /* Block 1: header with navigation  */
+
+.nav-container {
+  margin: 20px 0 100px 0;
+}
+ .navigation {
+  max-width: 50%;
+  margin: 0 auto;
+ 
+}
+
+.border-bottom {
+  max-width: 50%;
+  margin: 0 auto;
+ border-bottom: 2px solid rgb(130, 130, 130);
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: var(--additional-text-color);
+  text-decoration: none;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 0px 1px 3px rgb(130, 130, 130);
+}
+
+.main-heading {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.denis-novik-foto-container {
+text-align: center;
+}
+
+.denis-novik-foto {
+width: 58em;
+}
+
+/* Block 2: About Denis Novik */
+
+
+.bg-banner {
+  width: 100vw;
+  height: 30em;
+  background: url(../assets-denis-novik/bg.png);
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.section-headings {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 3em 0 1em 0;
+}
+
+.about-me-text {
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 400;
+}

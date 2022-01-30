@@ -13,40 +13,53 @@
 
     <!-- Block 1: header with navigation -->
 
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+    <header class="nav-container">
+      <nav class="navigation">
+        <ul class="navigation-links">
+          <li><a class="navigation_link" href="#">Home</a></li>
+          <li><a class="navigation_link" href="#about-me">About Me</a></li>
+          <li><a class="navigation_link" href="#my-skills">Skills</a></li>
+          <li><a class="navigation_link" href="#my-portfolio">Portfolio</a></li>
+          <li><a class="navigation_link" href="#my-contacts">Contacts</a></li>
         </ul>
       </nav>
-      <h1>Denis Novik</h1>
-      <img src="./assets-denis-novik/denis-novik.jpg" alt="Denis Novik" />
+      <div class="border-bottom"></div>
+      <div>
+        <h1 class="main-heading">Denis Novik</h1>
+      </div>
+      <div class="denis-novik-foto-container">
+        <img
+          class="denis-novik-foto"
+          src="./assets-denis-novik/denis-novik.jpg"
+          alt="Denis Novik"
+        />
+      </div>
     </header>
 
     <!-- Main part -->
 
     <main>
       <!-- Block 2: About Denis Novik -->
-      <section>
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
-          and everything connected with it.
+
+      <section id="about-me" class="bg-banner">
+        <h2 class="section-headings">About Me</h2>
+        <p class="about-me-text">
+          Hi, I'm Denis – UX/UI designer from Minsk. <br />
+          I'm interested in design and everything connected with it.
         </p>
-        <p>
-          I'm studying at courses "Web and mobile design interfaces" in
-          IT-Academy.
+        <p class="about-me-text">
+          I'm studying at courses "Web and mobile design <br />
+          interfaces" in IT-Academy.
         </p>
-        <p>Ready to implement excellent projects with wonderful people.</p>
+        <p class="about-me-text">
+          Ready to implement excellent projects <br />
+          with wonderful people.
+        </p>
       </section>
 
       <!-- Block 3: Denis Novik's Skills -->
 
-      <section>
+      <section id="my-skills">
         <h2>Skills</h2>
         <p>I work in such programs as</p>
         <div>
@@ -99,7 +112,7 @@
 
       <!-- block 4: Denis Novik's Portfolio -->
 
-      <section>
+      <section id="my-portfolio">
         <h2>Portfolio</h2>
         <div>
           <a href="#"
@@ -126,10 +139,9 @@
 
     <!-- Block 5: Footer - Contacts -->
 
-    <footer>
+    <footer id="my-contacts">
       <h2>Contacts</h2>
-      <p>Want to know more or just chat? 
-You are welcome!</p>
+      <p>Want to know more or just chat? You are welcome!</p>
       <a href="#"
         ><div><p>Message</p></div></a
       >
@@ -143,8 +155,7 @@ You are welcome!</p>
         <div><img src="./assets-denis-novik/behance.png" alt="Behance" /></div>
         <div><img src="./assets-denis-novik/dribble.png" alt="Dribble" /></div>
       </div>
-      <p>Like me on
-LinkedIn, Instagram, Behance, Dribble</p>
+      <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
   </body>
 </html>
