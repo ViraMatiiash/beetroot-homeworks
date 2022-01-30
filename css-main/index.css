@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: rgb(0, 0, 0);
+  --link-hover-color: rgb(255, 156, 62);
+  --main-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(146, 146, 145);
+  font-family: var(--main-font-family);
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.my-base-page {
+  max-width: 30vw;
+  margin: 4em;
+}
+
+.main-heading {
+  font-size: 2em;
+}
+
+.my-name {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.homework-link {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.homework-link:hover {
+    color: var(--link-hover-color);
+    border-bottom: 2px solid var(--link-hover-color);
+}
