@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --main-font-family: 'Montserrat', sans-serif;
   --link-hover-color: rgb(255, 156, 62);
+  --sidebar-color: rgb(212, 212, 212);
+  --no-decoration-color: rgb(255,255,255);
+  --link-color: rgb(0,0,0);
 }
 
-html {
+body {
     font-family: var(--main-font-family);
-    font-size: 1.1rem;
-    margin: 20px;  
+    font-size: 1.1em; 
+    font-weight: 500; 
 }
 
 .base-page-link {
@@ -16,17 +26,40 @@ html {
     font-weight: bold;   
 }
 
-/* .profile {
- 
-} */
+.base-page-link:hover {
+    color: var(--link-hover-color);
+border-bottom: 1px solid var(--link-hover-color);
+}
+
+.my-cv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    background-color: rgb(224, 224, 224);
+}
+
+a:link, a:visited, a:hover, a:active {
+color: var(--link-color);
+text-decoration: none;
+}
+
+li {
+    list-style-type: disc;   
+}
+
+/* Main info */
 
 .main-info {
-    max-width: 70%;
+    max-width: 50vw;
 }
 
 .main-heading {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+}
+
+.my-profession {
     text-align: center;
 }
 
@@ -36,6 +69,50 @@ html {
     margin-top: 1.5rem;
 }
 
+
+/* Sidebar */
+
 .sidebar {
-    max-width: 30%;
+    margin: 3em auto 0;
+    max-width: 25vw;
+    background-color: var(--sidebar-color);
 }
+
+.my-photo {
+    max-width: 25vw;
+}
+
+.social-networks, .contacts {
+margin: 1em 3em 0;    
+}
+
+.sidebar-heading {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.social-network {
+ border-bottom: 1px solid var(--link-color);   
+}
+
+.social-network:hover {
+ color: var(--link-hover-color);
+border-bottom: 1px solid var(--link-hover-color);   
+}
+
+.my-contacts {
+    font-weight: bold;
+}
+
+.my-contact {
+    font-weight: bold;
+    border-bottom: 1px solid var(--link-color);
+    
+}
+
+.my-contact:hover {
+color: var(--link-hover-color);
+border-bottom: 1px solid var(--link-hover-color);
+}
+
+
