@@ -52,7 +52,7 @@ li {
 /* Main info */
 
 .main-info {
-  max-width: 50vw;
+  max-width: 65vw;
 }
 
 .main-heading {
@@ -79,12 +79,13 @@ li {
 /* Sidebar */
 
 .sidebar {
-  margin: 3em auto 0;
+  margin: 0 auto;
   max-width: 25vw;
   background-color: var(--sidebar-color);
 }
 
 .my-photo {
+  margin-top: 3em;
   max-width: 25vw;
 }
 
