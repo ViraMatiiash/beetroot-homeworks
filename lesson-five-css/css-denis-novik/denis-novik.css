@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid rgb(255, 0, 0);
   margin: 0;
   padding: 0;
 }
@@ -19,26 +18,28 @@ a {
   text-decoration: none;
 }
 
- /* Block 1: header with navigation  */
+/* Block 1: header with navigation  */
 
 .nav-container {
   margin: 20px 0 100px 0;
 }
- .navigation {
+.navigation {
   max-width: 50%;
   margin: 0 auto;
- 
 }
 
 .border-bottom {
   max-width: 50%;
   margin: 0 auto;
- border-bottom: 2px solid rgb(130, 130, 130);
- margin-top: 20px;
- margin-bottom: 20px;
+  border-bottom: 2px solid var(--additional-text-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   color: var(--additional-text-color);
   text-decoration: none;
 }
@@ -46,7 +47,7 @@ a:link, a:visited, a:hover, a:active {
 .navigation-links {
   display: flex;
   justify-content: space-around;
-  text-shadow: 0px 1px 3px rgb(130, 130, 130);
+  text-shadow: 0px 1px 3px var(--additional-text-color);
 }
 
 .main-heading {
@@ -56,15 +57,14 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .denis-novik-foto-container {
-text-align: center;
+  text-align: center;
 }
 
 .denis-novik-foto {
-width: 58em;
+  width: 58em;
 }
 
 /* Block 2: About Denis Novik */
-
 
 .bg-banner {
   width: 100vw;
@@ -72,7 +72,6 @@ width: 58em;
   background: url(../assets-denis-novik/bg.png);
   background-position: center;
   background-attachment: fixed;
-
 }
 
 .section-headings {
@@ -87,3 +86,30 @@ width: 58em;
   padding: 1em 0;
   font-weight: 400;
 }
+
+/* Block 3: Denis Novik's Skills */
+
+.skills-text {
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 400;
+}
+
+.programs {
+  max-width: 70vw;
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.program-bg {
+  background-color: var(--main-text-color);
+}
+
+.program-name {
+ color: var(--additional-text-color);
+ padding: 0.8em 0 2em;
+}
+
+/* block 4: Denis Novik's Portfolio */
