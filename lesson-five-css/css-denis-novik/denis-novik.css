@@ -21,15 +21,15 @@ a {
 /* Block 1: header with navigation  */
 
 .nav-container {
-  margin: 20px 0 100px 0;
+  margin: 1.1em 0 5.5em 0;
 }
 .navigation {
-  max-width: 50%;
+  max-width: 45vw;
   margin: 0 auto;
 }
 
 .border-bottom {
-  max-width: 50%;
+  max-width: 60vw;
   margin: 0 auto;
   border-bottom: 2px solid var(--additional-text-color);
   margin-top: 20px;
@@ -58,10 +58,11 @@ a:active {
 
 .denis-novik-foto-container {
   text-align: center;
+  margin: 2em auto;
 }
 
 .denis-novik-foto {
-  width: 58em;
+  width: 60vw;
 }
 
 /* Block 2: About Denis Novik */
@@ -72,6 +73,7 @@ a:active {
   background: url(../assets-denis-novik/bg.png);
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .section-headings {
@@ -96,7 +98,7 @@ a:active {
 }
 
 .programs {
-  max-width: 70vw;
+  max-width: 60vw;
   margin: 4em auto;
   display: flex;
   justify-content: space-around;
@@ -105,6 +107,11 @@ a:active {
 
 .program-bg {
   background-color: var(--main-text-color);
+  width: 5em;
+}
+
+.figma-icon {
+  width: 5em;
 }
 
 .program-name {
@@ -113,3 +120,61 @@ a:active {
 }
 
 /* block 4: Denis Novik's Portfolio */
+
+.portfolio-bg {
+  background-image: url(../assets-denis-novik/bg-portfolio.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.site-link-img {
+  display: block;
+  width: 60vw;
+  margin: 4em auto 1em;
+}
+
+.portfolio-site-link {
+  width: 15em;
+  text-align: center;
+}
+
+/* Block 5: Footer - Contacts */
+
+.contact-text {
+  margin: -2em;
+}
+.message-btn {
+  margin: 4em auto 3em;
+  background-color: var(--main-text-color);
+  width: 10em;
+  height: 2.5em;
+  border-radius: 20px;
+}
+.message-text {
+  padding: 0.4em 0;
+  text-align: center;
+  color: var(--message-color);
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 18vw;
+  margin: 0 auto;
+}
+
+.sm-icon {
+  width: 2.9em;
+}
+
+.like-me-on {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: var(--additional-text-color);
+  text-align: center;
+  margin: 2em auto 6em;
+
+}
