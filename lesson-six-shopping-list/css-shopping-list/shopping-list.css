@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: rgb(59, 63, 69);
+  --header-color: rgb(74, 79, 86);
+  --header-text-color: rgb(255, 137, 132);
+  --list-text-color: rgb(255, 255, 255);
+  --list-item-hover-color: rgb(98, 94, 119);
+  --odd-list-items-color: rgb(136, 131, 158);
+  --even-list-items-color: rgb(122, 117, 147);
+}
+
+body {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+
+.shopping-list-header {
+  background-color: var(--header-color);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.shopping-list-heading {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--header-text-color);
+}
+
+.shopping-list-header-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--header-text-color);
+}
+
+/* Main Part */
+
+.bg {
+  background-color: var(--background-color);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  
+}
+
+.shopping-list-form {
+  list-style-type: none; 
+   
+}
+
+.shopping-list-item {
+    height: 2.5em;
+  width: 45em;
+  display: inline-block;
+  text-align: start;
+ 
+}
+
+li:nth-of-type(odd) {
+  background-color: var(--odd-list-items-color);
+  border: 1px solid transparent;
+ 
+  
+}
+
+li:nth-of-type(even) {
+  background-color: var(--even-list-items-color);
+  border: 1px solid transparent;
+
+}
+
+/* Bon appetit button */
+
+.bon-appetit-button {
+  border: none;
+  background-color: var(--header-color);
+  width: 30em;
+  height: 2.5em;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--header-text-color);
+}
