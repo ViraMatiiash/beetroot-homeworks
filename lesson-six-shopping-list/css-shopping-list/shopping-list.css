@@ -52,33 +52,70 @@ body {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  
 }
 
 .shopping-list-form {
-  list-style-type: none; 
-   
+  list-style-type: none;
 }
 
 .shopping-list-item {
-    height: 2.5em;
+  height: 2.5em;
   width: 45em;
   display: inline-block;
   text-align: start;
- 
+  color: var(--list-text-color);
+}
+
+.shopping-list-item:hover {
+  background-color: var(--list-item-hover-color);
+  border-top-color: var(--list-text-color);
+  border-bottom-color: var(--list-text-color);
+}
+
+.shopping-list-item:active {
+  background-color: var(--header-text-color);
 }
 
 li:nth-of-type(odd) {
   background-color: var(--odd-list-items-color);
-  border: 1px solid transparent;
- 
-  
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 li:nth-of-type(even) {
   background-color: var(--even-list-items-color);
-  border: 1px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
 
+input[type="checkbox"] {
+width: 1.1em;
+height: 1.1em;
+}
+
+input {
+  margin: 0.5em;
+}
+
+.list-field {
+  display: flex;
+}
+
+label {
+  width: 45em;
+  height: 2.5em;
+}
+
+.additional-list-text {
+  font-size: 0.6em;
+}
+
+.additional-list-text::before {
+  content: "(";
+}
+
+.additional-list-text::after {
+  content: ")";
 }
 
 /* Bon appetit button */
