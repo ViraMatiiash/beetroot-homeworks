@@ -27,20 +27,23 @@
       <h1 class="shopping-list-heading">CSS Dinner Shopping List</h1>
       <div class="shopping-list-header-text">Let's go to the mall!</div>
     </header>
+
+    <!-- Main part with the list -->
     <main class="bg">
       <form>
         <ul class="shopping-list-form">
           <li class="shopping-list-item">
             <div class="list-field">
-              <label for="lot-of-pickles" checked
+              <label for="lot-of-pickles" 
                 ><input
                   type="checkbox"
                   id="lot-of-pickles"
                   name="lot-of-pickles"
-                />A lot of pickles
+                /><span class="geekmark"></span><span class="shopping-list-text">A lot of pickles
                 <span class="additional-list-text"
                   >for the next lessons about CSS</span
-                >
+                ></span>
+                <div class="control"></div>
               </label>
             </div>
           </li>
@@ -48,16 +51,15 @@
           <li class="shopping-list-item">
             <div class="list-field">
               <label for="ten-apples"
-                ><input type="checkbox" id="ten-apples" name="ten-apples" />10
+                ><input type="checkbox" id="ten-apples" name="ten-apples" /><span class="geekmark"></span><span class="shopping-list-text">10
                 apples
                 <span class="additional-list-text"
                   >for more CSS manipulations</span
-                >
+                ></span>
               </label>
             </div>
           </li>
           <br />
-
           <li class="shopping-list-item">
             <div class="list-field">
               <label for="twenty-oranges"
@@ -65,11 +67,11 @@
                   type="checkbox"
                   id="twenty-oranges"
                   name="twenty-oranges"
-                />
+                /><span class="geekmark"></span><span class="shopping-list-text">
                 20 oranges
                 <span class="additional-list-text"
                   >because they are awesome</span
-                ></label
+                ></span></label
               >
             </div>
           </li>
@@ -81,11 +83,11 @@
                   type="checkbox"
                   id="thirteen-plates"
                   name="thirteen-plates"
-                />
+                /><span class="geekmark"></span><span class="shopping-list-text">
                 13 plates
                 <span class="additional-list-text"
                   >hm...they always dissappear</span
-                ></label
+                ></span></label
               >
             </div>
           </li>
@@ -97,8 +99,8 @@
                   type="checkbox"
                   id="fifteen-bentos"
                   name="fifteen-bentos"
-                />
-                15 bentos</label
+                /><span class="geekmark"></span><span class="shopping-list-text">
+                15 bentos</span></label
               >
             </div>
           </li>
@@ -110,9 +112,9 @@
                   type="checkbox"
                   id="bottle-of-sake"
                   name="bottle-of-sake"
-                />
+                /><span class="geekmark"></span><span class="shopping-list-text">
                 1 bottle of Sake
-                <span class="additional-list-text">for my friends</span></label
+                <span class="additional-list-text">for my friends</span></span></label
               >
             </div>
           </li>
@@ -120,5 +122,6 @@
         <button class="bon-appetit-button" type="submit">Bon appetit :)</button>
       </form>
     </main>
+    <footer></footer>
   </body>
 </html>

@@ -14,6 +14,7 @@
   --list-item-hover-color: rgb(98, 94, 119);
   --odd-list-items-color: rgb(136, 131, 158);
   --even-list-items-color: rgb(122, 117, 147);
+  --checked-list-item: rgb(155, 150, 172);
 }
 
 body {
@@ -52,14 +53,16 @@ body {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  height: 100vh;
 }
 
 .shopping-list-form {
   list-style-type: none;
+  padding-top: 2em;
 }
 
 .shopping-list-item {
-  height: 2.5em;
+  height: 3.5em;
   width: 45em;
   display: inline-block;
   text-align: start;
@@ -70,31 +73,58 @@ body {
   background-color: var(--list-item-hover-color);
   border-top-color: var(--list-text-color);
   border-bottom-color: var(--list-text-color);
+  transition: all 0.1s ease-in;
 }
 
 .shopping-list-item:active {
   background-color: var(--header-text-color);
+  transition: all 0.1s ease-in;
 }
 
 li:nth-of-type(odd) {
   background-color: var(--odd-list-items-color);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  transition: all 0.1s ease-in;
 }
 
 li:nth-of-type(even) {
   background-color: var(--even-list-items-color);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  transition: all 0.1s ease-in;
 }
 
 input[type="checkbox"] {
-width: 1.1em;
-height: 1.1em;
+  visibility: hidden;
+}
+
+.geekmark {
+  display: inline-block;
+  position: relative;
+  margin: 0.5em 1em 0 -1.7em;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: var(--list-text-color);
+  transform: translateY(33%);
+}
+
+input:checked ~ .geekmark:after {
+  display: inline-block;
+  content: url(/lesson-six-shopping-list/assets-shopping-list/tick.png);
+  position: absolute;
+  text-align: center;
+  left: 0.3em;
+  top: 0.1em;
+}
+
+input:checked ~ span {
+  text-decoration: line-through;
+  color: var(--checked-list-item);
 }
 
 input {
-  margin: 0.5em;
+  margin: 1em;
 }
 
 .list-field {
@@ -103,11 +133,16 @@ input {
 
 label {
   width: 45em;
-  height: 2.5em;
+  height: 3.5em;
 }
 
 .additional-list-text {
-  font-size: 0.6em;
+  font-size: 0.9em;
+}
+
+.shopping-list-text {
+  display: inline-block;
+  transform: translateY(15%);
 }
 
 .additional-list-text::before {
@@ -128,4 +163,5 @@ label {
   font-size: 1.5em;
   font-weight: 400;
   color: var(--header-text-color);
+  margin-top: 2.5em;
 }
