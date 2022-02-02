@@ -69,6 +69,7 @@ body {
   display: inline-block;
   text-align: start;
   color: var(--list-text-color);
+  padding: 0 0 0 2.5em;
 }
 
 .shopping-list-item:hover {
@@ -98,7 +99,7 @@ li:nth-of-type(even) {
 }
 
 input[type="checkbox"] {
-  display: none;
+  display: none; 
 }
 
 .input-item {
