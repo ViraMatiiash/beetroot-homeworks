@@ -98,7 +98,7 @@ li:nth-of-type(even) {
 }
 
 input[type="checkbox"] {
-  visibility: hidden;
+  display: none;
 }
 
 .input-item {
