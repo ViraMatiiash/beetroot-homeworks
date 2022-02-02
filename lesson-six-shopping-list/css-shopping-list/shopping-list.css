@@ -113,11 +113,12 @@ input[type="checkbox"] {
 
 input:checked ~ .input-item:after {
   display: inline-block;
-  content: url(/lesson-six-shopping-list/assets-shopping-list/tick.png);
+  content: url(../assets-shopping-list/tick.png);
   position: absolute;
   text-align: center;
   left: 0.3em;
   top: 0.1em;
+  color: black;
 }
 
 input:checked ~ span {
