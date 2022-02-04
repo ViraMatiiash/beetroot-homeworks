@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-logo-text: rgb(23, 58, 86);
+  --c-heading: hsl(35, 22%, 15%);
+  --c-main-text: rgb(84, 72, 55);
+  --c-sign-in-button-border: rgb(188, 208, 229);
+  --c-sign-up-text: rgb(255, 255, 255);
+  --c-sign-up-bg: rgb(255, 153, 0);
+  --c-bg: rgb(242, 242, 242);
+  --main-ff: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--main-ff);
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-heading);
+}
+
+.wrapper {
+  padding: 0 8em;
+}
+
+/* Header with navigation */
+
+.productly-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productly-logotype-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 10em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header-navigation {
+  width: 100%;
+  max-width: 19.5em;
+}
+
+.nav-list {
+  text-decoration: none;
+  color: var(--c-heading);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons {
+  width: 100%;
+  max-width: 12.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-button,
+.sign-up-button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.6em 1.4em;
+}
+
+.sign-in-button {
+  color: var(--c-logo-text);
+  border: 2px solid var(--c-sign-in-button-border);
+}
+
+.sign-up-button {
+  background-color: var(--c-sign-up-bg);
+  color: var(--c-sign-up-text);
+  border: none;
+}
+
+/* Main Heading + img */
+
+.main-heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--c-heading);
+}
+
+.after-main-heading-text {
+  font-size: 0.9em;
+  color: var(--c-main-text);
+  line-height: 1.5em;
+}
+
+.get-started-btn {
+  background-color: var(--c-sign-up-bg);
+  color: var(--c-sign-up-text);
+  border: none;
+  padding: 0.8em 2.2em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.superpowers-button-line {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 20.6em;
+}
+.watch-video-group {
+  width: 100%;
+  max-width: 9.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.triangle-container {
+  width: 100%;
+  max-width: 1.1em;
+}
+
+.video-link {
+  color: var(--c-sign-up-bg);
+  font-size: 0.9em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--c-sign-up-bg);
+}
