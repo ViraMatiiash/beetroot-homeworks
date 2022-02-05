@@ -26,15 +26,18 @@ a {
 }
 
 .container {
-    width: 100%;
-    max-width: 78em;
-    background-color: var(--c-bg);
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 80em;
+  height: 100vw;
+  background-color: var(--c-bg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
 }
 
 .wrapper {
+  width: 100%;
   padding: 0 8em;
 }
 
@@ -44,6 +47,8 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 1.1em;
 }
 
 .productly-logotype-container {
@@ -54,6 +59,11 @@ a {
   max-width: 10em;
 }
 
+.productly-logo-container {
+  transform: translateY(15%);
+  margin-left: 0.5em;
+}
+
 img {
   display: block;
   width: 100%;
@@ -62,6 +72,8 @@ img {
 .header-navigation {
   width: 100%;
   max-width: 19.5em;
+  margin-left: 15em;
+  margin-right: 1.7em;
 }
 
 .nav-list {
@@ -70,6 +82,8 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 .nav-buttons {
@@ -92,6 +106,7 @@ img {
 .sign-in-button {
   color: var(--c-logo-text);
   border: 2px solid var(--c-sign-in-button-border);
+  margin-right: 0.8em;
 }
 
 .sign-up-button {
@@ -103,22 +118,27 @@ img {
 /* Main Heading + img */
 
 .superpowers-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6.4em;
 }
+
 .main-heading {
   font-size: 2.5em;
   font-weight: bold;
   color: var(--c-heading);
+  margin-bottom: 1.7em;
 }
 
 .after-main-heading-text {
   font-size: 0.9em;
   color: var(--c-main-text);
   line-height: 1.5em;
+  margin-bottom: 2.5em;
 }
 
-.get-started-btn, .sign-up-now-button {
+.get-started-btn,
+.sign-up-now-button {
   display: inline-block;
   background-color: var(--c-sign-up-bg);
   color: var(--c-sign-up-text);
@@ -131,7 +151,7 @@ img {
 
 .superpowers-button-line {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   max-width: 20.6em;
 }
@@ -156,10 +176,11 @@ img {
 }
 
 .superpowers-image-container {
-    width: 100%;
-    max-width: 33.6em;
+  width: 100%;
+  max-width: 33.6em;
+  margin-left: 0.3em;
+  margin-bottom: 6.1em;
 }
-
 
 /* Design Tools */
 
@@ -168,6 +189,7 @@ img {
   font-size: 2em;
   color: var(--c-heading);
   font-weight: 700;
+  margin-bottom: 3em;
 }
 
 .design-tools-superpowers-container {
@@ -176,14 +198,16 @@ img {
 }
 
 .superpowers-icons-container {
- width: 100%;
- max-width: 2.8em; 
+  width: 100%;
+  max-width: 2.8em;
+  margin-bottom: 1.7em;
 }
 
 .design-tool-heading {
   font-size: 1.2em;
   color: var(--c-heading);
   font-weight: 600;
+  margin-bottom: 0.8em;
 }
 
 .design-tool-description {
@@ -193,6 +217,7 @@ img {
 }
 
 .button-container {
-text-align: center;
-
+  margin-top: 1.95em;
+  margin-bottom: 11.7em;
+  text-align: center;
 }
