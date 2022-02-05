@@ -118,7 +118,8 @@ img {
   line-height: 1.5em;
 }
 
-.get-started-btn {
+.get-started-btn, .sign-up-now-button {
+  display: inline-block;
   background-color: var(--c-sign-up-bg);
   color: var(--c-sign-up-text);
   border: none;
@@ -157,4 +158,41 @@ img {
 .superpowers-image-container {
     width: 100%;
     max-width: 33.6em;
+}
+
+
+/* Design Tools */
+
+.superpowers-heading {
+  text-align: center;
+  font-size: 2em;
+  color: var(--c-heading);
+  font-weight: 700;
+}
+
+.design-tools-superpowers-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.superpowers-icons-container {
+ width: 100%;
+ max-width: 2.8em; 
+}
+
+.design-tool-heading {
+  font-size: 1.2em;
+  color: var(--c-heading);
+  font-weight: 600;
+}
+
+.design-tool-description {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--c-main-text);
+}
+
+.button-container {
+text-align: center;
+
 }
