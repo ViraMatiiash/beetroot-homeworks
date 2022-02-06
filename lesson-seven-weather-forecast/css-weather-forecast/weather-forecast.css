@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ff-main: 'Roboto', sans-serif;
+    --c-border: rgb(255, 255, 255);
+}
