@@ -71,7 +71,7 @@ a:active {
 
 .bg-banner {
   height: 30em;
-  background: url(../assets-denis-novik/bg.png);
+  background: url(../image/bg.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -123,7 +123,7 @@ a:active {
 /* block 4: Denis Novik's Portfolio */
 
 .portfolio-bg {
-  background-image: url(../assets-denis-novik/bg-portfolio.png);
+  background-image: url(../image/bg-portfolio.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
