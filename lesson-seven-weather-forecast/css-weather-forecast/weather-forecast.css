@@ -113,11 +113,17 @@ i {
     font-size: 20px;
 }
 
-ul:hover li {
-    opacity: 0.6;
+/* ul:hover li {
+    opacity: 0.5;
+} */
+
+ul:hover li:not(:hover) {
+  background: rgba(255, 255, 255, 0.5); 
+  mix-blend-mode:screen;
 }
 
 ul:hover li:hover {
  opacity: 1;   
 }
+
 
