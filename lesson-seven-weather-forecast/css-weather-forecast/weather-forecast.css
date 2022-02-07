@@ -45,6 +45,7 @@ li {
   height: 5em;
   border: 1px solid var(--c-border);
   padding: 1.2em;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p:last-child {
