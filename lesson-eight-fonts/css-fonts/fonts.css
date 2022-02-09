@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font-assets/roboto/Roboto-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../font-assets/pt-sans/PTSans-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+mark {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: "PT Sans";
+}
+
+h1::first-letter, h2::first-letter {
+    font-size: 0.5em;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.parag-main-word::before {
+    content: "+";
+    font-weight: bold;
+}
