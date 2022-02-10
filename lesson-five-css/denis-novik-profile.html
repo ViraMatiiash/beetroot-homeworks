@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css-denis-novik/reset.css" />
+    <link rel="stylesheet" href="./css-denis-novik/gilroy-font.css" />
     <link rel="stylesheet" href="css-denis-novik/denis-novik.css" />
     <title>Denis Novik Profile</title>
   </head>
@@ -24,17 +25,28 @@
         </ul>
       </nav>
       <div class="border-bottom"></div>
-      <div>
-        <h1 class="main-heading">Denis Novik</h1>
-      </div>
-      <div class="denis-novik-foto-container">
-        <img
-          class="denis-novik-foto"
-          src="./image/denis-novik.jpg"
-          alt="Denis Novik"
-        />
-      </div>
     </header>
+    <div class="heading-container">
+      <h1 class="main-heading">
+        Denis <br />
+        Novik
+      </h1>
+      <p class="novik-info">
+        UX | UI designer <br />
+        24 years old, Minsk
+      </p>
+      <div class="lang">
+        <a class="lang-link" href="#">RU</a><span> | </span
+        ><a class="lang-link" href="#">ENG</a>
+      </div>
+    </div>
+    <div class="denis-novik-foto-container">
+      <img
+        class="denis-novik-foto"
+        src="./image/denis-novik.jpg"
+        alt="Denis Novik"
+      />
+    </div>
 
     <!-- Main part -->
 
@@ -42,7 +54,7 @@
       <!-- Block 2: About Denis Novik -->
 
       <section id="about-me" class="bg-banner">
-        <h2 class="section-headings">About Me</h2>
+        <h2 class="section-headings">About me</h2>
         <p class="about-me-text">
           Hi, I'm Denis – UX/UI designer from Minsk. <br />
           I'm interested in design and everything connected with it.
@@ -64,11 +76,7 @@
         <p class="skills-text">I work in such programs as</p>
         <div class="programs">
           <div class="my-skill">
-            <img
-              class="program-bg"
-              src="./image/ps.png"
-              alt="Photoshop"
-            />
+            <img class="program-bg" src="./image/ps.png" alt="Photoshop" />
             <p class="program-name">
               Adobe <br />
               Photoshop
@@ -146,9 +154,11 @@
               alt="Online fashion store"
           /></a>
         </div>
-        <a class="portfolio-site-link" href="#"
-          ><p>Online fashion store - Homepage</p></a
-        >
+        <div class="portfolio-link-container">
+          <a class="portfolio-site-link" href="#"
+            >Online fashion store - Homepage</a
+          >
+        </div>
         <div>
           <a href=""
             ><img
@@ -157,9 +167,9 @@
               alt="Reebok Store"
           /></a>
         </div>
-        <a class="portfolio-site-link" href="#"
-          ><p>Reebok Store - Concept</p></a
-        >
+        <div class="portfolio-link-container">
+          <a class="portfolio-site-link" href="#">Reebok Store - Concept</a>
+        </div>
         <div>
           <a href="#"
             ><img
@@ -168,9 +178,11 @@
               alt="Braun"
           /></a>
         </div>
-        <a class="portfolio-site-link braun-site-link" href="#"
-          ><p>Braun Landing Page - Concept</p></a
-        >
+        <div class="portfolio-link-container last-portfolio-link">
+          <a class="portfolio-site-link braun-site-link" href="#"
+            >Braun Landing Page - Concept</a
+          >
+        </div>
       </section>
     </main>
 
@@ -183,45 +195,34 @@
         You are welcome!
       </p>
       <div class="message-btn">
-        <a href="#"><p class="message-text">Send Message</p></a>
+        <a href="#"><p class="message-text">Send message</p></a>
       </div>
       <div class="social-media">
         <div>
           <a href=""
-            ><img
-              class="sm-icon"
-              src="./image/linkedin.png"
-              alt="LinkedIn"
+            ><img class="sm-icon" src="./image/linkedin.png" alt="LinkedIn"
           /></a>
         </div>
         <div>
           <a href=""
-            ><img
-              class="sm-icon"
-              src="./image/instagram.png"
-              alt="Instagram"
+            ><img class="sm-icon" src="./image/instagram.png" alt="Instagram"
           /></a>
         </div>
         <div>
           <a href=""
-            ><img
-              class="sm-icon"
-              src="./image/behance.png"
-              alt="Behance"
+            ><img class="sm-icon" src="./image/behance.png" alt="Behance"
           /></a>
         </div>
         <div>
           <a href=""
-            ><img
-              class="sm-icon"
-              src="./image/dribble.png"
-              alt="Dribble"
+            ><img class="sm-icon" src="./image/dribble.png" alt="Dribble"
           /></a>
         </div>
       </div>
-      <p class="like-me-on">Like me on <br> 
-        LinkedIn, Instagram, Behance, <br>
-         Dribble</p>
+      <p class="like-me-on">
+        Like me on <br />
+        LinkedIn, Instagram, Behance, Dribble
+      </p>
     </footer>
   </body>
 </html>
