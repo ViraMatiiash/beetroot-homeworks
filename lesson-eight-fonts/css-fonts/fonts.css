@@ -20,7 +20,13 @@
 
 body {
     font-family: 'Roboto';
-    font-size: 36px;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.pg-container {
+    width: 100%;
+    padding: 0.9em 2.8em 7em 2.8em;
 }
 
 a {
@@ -33,17 +39,66 @@ mark {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    font-family: "PT Sans";
+.width-container {
+    width: 100%;
 }
 
-h1::first-letter, h2::first-letter {
-    font-size: 0.5em;
-    vertical-align: top;
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.header-link {
+    display: flex;
+    justify-content: space-between;
+    max-width: 20em;
+    text-align: center;
+}
+
+.eng-icon {
+    max-width: 2.5em;
+}
+
+.eng-img {
+    vertical-align:middle;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.konstrut-logo {
+    max-width: 12em;
+}
+
+h2 {
+    font-family: "PT Sans";
+    margin-bottom: 1.5em;
+}
+
+h2::first-letter {
+    font-size: 0.4em;
+    vertical-align:super;
     font-weight: bold;
 }
 
 .parag-main-word::before {
     content: "+";
     font-weight: bold;
+    margin-right: 0.5em;
+    vertical-align:auto;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.homework-link {
+    padding: 1em 3em;
 }

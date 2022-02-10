@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Div with Base Page Link -->
-    <div>
+    <div class="homework-link">
       <p>
         <a href="../index.html" class="base-page-link">Homework Base Page</a>
       </p>
@@ -24,16 +24,18 @@
     <div class="wrapper">
       <div class="pg-container">
         <!-- Header -->
-        <header>
-          <div class="eng-icon">
-            <img src="./font-assets/img/eng-icon.svg" alt="English Icon" />
+        <header class="flex-container width-container">
+          <div class="header-link width-container">
+            <div class="eng-icon width-container">
+            <img class="width-container eng-img" src="./font-assets/img/eng-icon.svg" alt="English Icon" />
           </div>
-          <nav>
+          <nav class="navigation-list width-container">
             <li><a href="#">Documentation</a><span>/</span></li>
             <li><a href="#">Who's using</a></li>
           </nav>
-          <div class="konstrut-logo">
-            <img
+          </div>
+          <div class="konstrut-logo width-container">
+            <img class="width-container"
               src="./font-assets/img/konstrut-logo.svg"
               alt="Konstrut Logotype"
             />
@@ -41,8 +43,8 @@
         </header>
 
         <!-- Main Part -->
-        <main>
-          <h1>1 Introduction</h1>
+        <main class="width-container">
+          <h2>1 Introduction</h2>
           <p>
             Welcome to the very start of your React Native journey! If you're
             looking for environment setup instructions, they've moved to
@@ -70,13 +72,13 @@
           <p>We’re going to cover the core concepts behind React:</p>
           <p>
             <span class="parag-main-word"><b>components.</b></span
-            >The rest of this introduction to React uses cats in its examples:
+            > The rest of this introduction to React uses cats in its examples:
             friendly, approachable creatures that need names and a cafe to work
             in.
           </p>
           <p>
             <span class="parag-main-word"><b>JSX.</b></span
-            >React and React Native use JSX, a syntax that lets you write
+            > React and React Native use JSX, a syntax that lets you write
             elements inside JavaScript like so:
             <mark>&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</mark>. The
             React docs have <a href="#">a comprehensive guide to JSX</a> you can
@@ -87,11 +89,11 @@
           </p>
           <p>
             <span class="parag-main-word"><b>props.</b></span
-            >Props is short for “properties”.
+            > Props is short for “properties”.
           </p>
           <p>
             <span class="parag-main-word"><b>state.</b></span
-            >While you can think of props as arguments you use to configure how
+            > While you can think of props as arguments you use to configure how
             components render, state is like a component’s personal data
             storage. State is useful for handling data that changes over time or
             that comes from user interaction. State gives your components
@@ -117,7 +119,7 @@
 
       <!-- Footer with Base Page Link -->
       <footer>
-        <div>
+        <div class="homework-link">
           <p>
             <a href="../index.html" class="base-page-link"
               >Homework Base Page</a
