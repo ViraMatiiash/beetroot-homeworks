@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../font-assets/roboto/Roboto-Regular.ttf) format("truetype");
+    src: url("../font-assets/roboto/Roboto-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "PT Sans";
-    src: url(../font-assets/pt-sans/PTSans-Bold.ttf) format("truetype");
+    src: url("../font-assets/pt-sans/PTSans-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: bold;
 }
