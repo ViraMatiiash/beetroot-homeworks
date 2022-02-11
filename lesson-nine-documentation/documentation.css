@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../lesson-nine-documentation/assets-documentation/roboto/Roboto-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../lesson-nine-documentation/assets-documentation/pt-sans/PTSans-Bold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+/* Under Homework Link Border*/
+
+.under-hw-link-border-bottom {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Page Tags */
+
+body {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+mark {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+li {
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-family: "PT Sans";
+}
+
+/* Wrapper */
+
+.wrapper {
+  width: 100%;
+  max-width: 120em;
+  padding: 0 1.7em;
+}
+
+/* Header */
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  max-width: 76em;
+  max-height: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 20em;
+  font-size: 0.8em;
+}
+
+.eng-icon {
+  width: 100%;
+  max-width: 2.5em;
+}
+.eng-img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.konstrut-logo {
+  max-width: 12em;
+}
+
+.without-header-container {
+  padding-top: 130px;
+}
+
+/* Sidebar */
+
+.sticky-sidebar {
+  width: 100%;
+  max-width: 45em;
+  position: relative;
+}
+
+.sidebar {
+  position: sticky;
+  top: 130px;
+}
+
+.heading-border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
+
+.sidebar-heading::first-letter {
+  font-size: 0.4em;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+/* Main Page Info */
+
+.main-page {
+  margin-left: 1em;
+  background-image: url("./assets-documentation/img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+.thick-border {
+  border-bottom: 10px solid rgb(0, 0, 0);
+  max-width: 3.3em;
+  margin-bottom: 1em;
+}
+
+.main-page-heading {
+  margin-bottom: 1.5em;
+}
+
+.text-underline {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.parag-main-word::before {
+  content: "+";
+  font-weight: bold;
+  margin-right: 0.5em;
+  vertical-align: auto;
+}
+
+/* Bottom Homework Link */
+
+.homework-link {
+  padding: 1em 3em;
+}
