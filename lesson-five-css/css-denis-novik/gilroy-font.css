@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url(../assets-denis-novik/fonts/Gilroy-Medium.ttf) format("truetype");
+    src: url("../assets-denis-novik/fonts/Gilroy-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url(../assets-denis-novik/fonts/Gilroy-Bold.ttf) format("truetype");
+    src: url("../assets-denis-novik/fonts/Gilroy-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
