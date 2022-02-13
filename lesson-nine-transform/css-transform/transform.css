@@ -5,29 +5,29 @@
 }
 
 :root {
-    --c-bg-before: rgb(230, 230, 230);
-    --c-shopify-bg: rgb(26, 26, 26);
-    --bg-after: rgb(0, 0, 0);
-    --c-pg-bg: rgb(255, 255, 255);
+  --c-bg-before: rgb(230, 230, 230);
+  --c-shopify-bg: rgb(26, 26, 26);
+  --bg-after: rgb(0, 0, 0);
+  --c-pg-bg: rgb(255, 255, 255);
 }
 
 .hw {
-    font-size: 0.5em;
-    margin: 0 0 3em 3em;
-    text-align: center;
-    width: 100%;
-    max-width: 250px;
-    background-color: rgb(118, 196, 196);
+  font-size: 0.5em;
+  margin: 0 0 3em 3em;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  background-color: rgb(118, 196, 196);
 }
 
 .hw:hover {
-    background-color: rgb(22, 87, 87);
+  background-color: rgb(22, 87, 87);
 }
 
 /* Page Tags */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   line-height: 1.5em;
 }
@@ -42,9 +42,9 @@ li {
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Wrapper */
@@ -103,51 +103,164 @@ img {
 }
 
 .thick-line {
-    border-bottom: 10px solid rgb(0, 0, 0);
-    width: 100%;
-    max-width: 2.2em;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 0.5em;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  width: 100%;
+  max-width: 2.2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 
 .who-using-text {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Logos */
 
 .logos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .thin-line {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);  
-    margin-top: 0.5em;  
-    margin-bottom: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.bg-first-type, .bg-second-type {
-    width: 12em;
-    height: 7.8em;
-    border-radius: 10px; 
-    padding: 1em; 
-    margin-left: 0.2em;
+.bg-first-type,
+.bg-second-type {
+  width: 13em;
+  height: 7.8em;
+  border-radius: 10px;
+  padding: 1em;
+  transition: transform 1s, background-color 1s ease-in-out;
+  transform-style: preserve-3d;
 }
 
 .bg-first-type {
-    background-color: var(--c-bg-before);
+  background-color: var(--c-bg-before);
 }
 
 .bg-second-type {
-    background-color: var(--c-shopify-bg);
+  background-color: var(--c-shopify-bg);
 }
+
+/* Logos with hover */
+
+.bg-first-type:hover,
+.bg-second-type:hover {
+  transform: perspective(400px) rotateX(180deg) scale(1, -1);
+}
+
+.bg-first-type:hover {
+  background-color: var(--bg-after);
+}
+
+.bg-second-type:hover {
+  background-color: var(--c-bg-before);
+}
+
+.first-card {
+  background-image: url(../assets-transform/fb-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first-card:hover {
+  background-image: url(../assets-transform/fb-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second-card {
+  background-image: url(../assets-transform/insta-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second-card:hover {
+  background-image: url(../assets-transform/insta-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.third-card {
+  background-image: url(../assets-transform/shopify-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.third-card:hover {
+  background-image: url(../assets-transform/shopify-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fourth-card {
+  background-image: url(../assets-transform/skype-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fourth-card:hover {
+  background-image: url(../assets-transform/skype-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fifth-card {
+  background-image: url(../assets-transform/pinterest-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fifth-card:hover {
+  background-image: url(../assets-transform/pinterest-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-card {
+  background-image: url(../assets-transform/wix-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-card:hover {
+  background-image: url(../assets-transform/wix-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.seventh-card {
+  background-image: url(../assets-transform/salesforce-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.seventh-card:hover {
+  background-image: url(../assets-transform/salesforce-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eighth-card {
+  background-image: url(../assets-transform/soundcloud-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eighth-card:hover {
+  background-image: url(../assets-transform/soundcloud-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Last border-bottom */
 
 .thin-line:last-child {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
-
-
