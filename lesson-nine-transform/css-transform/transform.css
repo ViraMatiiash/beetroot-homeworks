@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Tags */
+
+body {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+li {
+  display: inline-block;
+}
+
+/* Wrapper */
+
+.wrapper {
+  width: 100%;
+  max-width: 120em;
+  padding: 0 1.7em;
+}
+
+/* Header */
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  max-width: 76em;
+  max-height: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 20em;
+  font-size: 0.8em;
+}
+
+.eng-icon {
+  width: 100%;
+  max-width: 2.5em;
+}
+.eng-img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.konstrut-logo {
+  max-width: 12em;
+}
+
+.without-header-container {
+  padding-top: 130px;
+}
