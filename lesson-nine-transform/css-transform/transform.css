@@ -4,21 +4,47 @@
   padding: 0;
 }
 
+:root {
+    --c-bg-before: rgb(230, 230, 230);
+    --c-shopify-bg: rgb(26, 26, 26);
+    --bg-after: rgb(0, 0, 0);
+    --c-pg-bg: rgb(255, 255, 255);
+}
+
+.hw {
+    font-size: 0.5em;
+    margin: 0 0 3em 3em;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    background-color: rgb(118, 196, 196);
+}
+
+.hw:hover {
+    background-color: rgb(22, 87, 87);
+}
+
 /* Page Tags */
 
 body {
-  font-family: "Roboto";
-  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
   line-height: 1.5em;
 }
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--bg-after);
 }
 
 li {
   display: inline-block;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* Wrapper */
@@ -38,12 +64,13 @@ li {
   max-height: 130px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--c-pg-bg);
 }
 
-.flex-container {
+.header-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .header-link {
@@ -51,7 +78,7 @@ li {
   justify-content: space-between;
   width: 100%;
   max-width: 20em;
-  font-size: 0.8em;
+  font-size: 0.55em;
 }
 
 .eng-icon {
@@ -74,3 +101,53 @@ li {
 .without-header-container {
   padding-top: 130px;
 }
+
+.thick-line {
+    border-bottom: 10px solid rgb(0, 0, 0);
+    width: 100%;
+    max-width: 2.2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.who-using-text {
+    display: inline-block;
+}
+
+/* Logos */
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.thin-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);  
+    margin-top: 0.5em;  
+    margin-bottom: 0.5em;
+}
+
+.bg-first-type, .bg-second-type {
+    width: 12em;
+    height: 7.8em;
+    border-radius: 10px; 
+    padding: 1em; 
+    margin-left: 0.2em;
+}
+
+.bg-first-type {
+    background-color: var(--c-bg-before);
+}
+
+.bg-second-type {
+    background-color: var(--c-shopify-bg);
+}
+
+.thin-line:last-child {
+    margin-bottom: 3em;
+}
+
+
