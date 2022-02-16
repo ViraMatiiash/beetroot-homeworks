@@ -147,7 +147,7 @@ img {
   height: 7.8em;
   border-radius: 10px;
   padding: 1em;
-  transition: transform 1s, background-color 1s ease-in-out;
+  transition: transform 1s, background-color 1.5s ease-in-out;
   transform-style: preserve-3d;
 }
 
@@ -178,96 +178,113 @@ img {
   background-image: url(../assets-transform/fb-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
+  
 }
 
 .first-card:hover {
   background-image: url(../assets-transform/fb-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .second-card {
   background-image: url(../assets-transform/insta-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .second-card:hover {
   background-image: url(../assets-transform/insta-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .third-card {
   background-image: url(../assets-transform/shopify-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .third-card:hover {
   background-image: url(../assets-transform/shopify-black.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .fourth-card {
   background-image: url(../assets-transform/skype-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .fourth-card:hover {
   background-image: url(../assets-transform/skype-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .fifth-card {
   background-image: url(../assets-transform/pinterest-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .fifth-card:hover {
   background-image: url(../assets-transform/pinterest-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .sixth-card {
   background-image: url(../assets-transform/wix-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .sixth-card:hover {
   background-image: url(../assets-transform/wix-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .seventh-card {
   background-image: url(../assets-transform/salesforce-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .seventh-card:hover {
   background-image: url(../assets-transform/salesforce-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .eighth-card {
   background-image: url(../assets-transform/soundcloud-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .eighth-card:hover {
   background-image: url(../assets-transform/soundcloud-white.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 /* Last border-bottom */
