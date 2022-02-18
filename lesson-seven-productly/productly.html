@@ -27,39 +27,52 @@
     <div class="container">
       <div class="wrapper">
         <!-- Header with navigation -->
-        <header class="productly-header">
-          <div class="productly-logotype-container">
-            <div>
-              <img
-                src="./assets-productly/productly-icon.svg"
-                alt="Productly Icon"
-              />
+        <header class="c-header">
+          <div class="c-header-wrapper">
+            <!-- Logo container -->
+            <div class="c-logo">
+              <div class="c-logo__icon-container">
+                <img
+                  class="c-logo__icon"
+                  src="./assets-productly/productly-icon.svg"
+                  alt="Productly Icon"
+                />
+              </div>
+              <div class="c-logo__text-container">
+                <img
+                  class="c-logo__text"
+                  src="./assets-productly/productly.svg"
+                  alt="Productly Logotype Text"
+                />
+              </div>
             </div>
-            <div class="productly-logo-container">
-              <img
-                src="./assets-productly/productly.svg"
-                alt="Productly Logotype Text"
-              />
+            <!-- Header Navigation -->
+            <nav class="c-navigation">
+              <ul class="c-navigation__list">
+                <li class="c-navigation__item">
+                  <a class="c-navigation__link" href="#">Product</a>
+                </li>
+                <li class="c-navigation__item">
+                  <a class="c-navigation__link" href="#">Customers</a>
+                </li>
+                <li class="c-navigation__item">
+                  <a class="c-navigation__link" href="#">Pricing</a>
+                </li>
+                <li class="c-navigation__item">
+                  <a class="c-navigation__link" href="#">Resources</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="c-header__buttons-container">
+              <button type="button" class="e-button--transparent">
+                <span>Sign In</span>
+              </button>
+              <button type="button" class="e-button">
+                <span>Sign Up</span>
+              </button>
             </div>
-          </div>
-          <nav class="header-navigation">
-            <ul class="nav-list">
-              <li class="navigation-link"><a href="#">Product</a></li>
-              <li class="navigation-link"><a href="#">Customers</a></li>
-              <li class="navigation-link"><a href="#">Pricing</a></li>
-              <li class="navigation-link"><a href="#">Resources</a></li>
-            </ul>
-          </nav>
-          <div class="nav-buttons">
-            <button type="button" class="sign-in-button">
-              <span>Sign In</span>
-            </button>
-            <button type="button" class="sign-up-button">
-              <span>Sign Up</span>
-            </button>
           </div>
         </header>
-
         <!-- Main Heading + img -->
         <section class="superpowers-container">
           <div>
