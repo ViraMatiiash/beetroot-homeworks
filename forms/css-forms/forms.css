@@ -93,6 +93,10 @@ h1 {
   color: var(--c-select-triangle);
 }
 
+.c-form-item__after-text {
+font-size: 0.8em;
+}
+
 .c-form-item__label,
 .c-form__input--big {
   margin-bottom: 0.5em;
