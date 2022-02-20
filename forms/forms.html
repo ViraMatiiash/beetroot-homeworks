@@ -12,9 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css-forms/forms.css" />
   </head>
   <body>
@@ -23,82 +26,132 @@
     </div>
     <!-- Whole Page Wrappers -->
     <div class="page-container">
-    <div class="wrapper">
-      <!-- Header -->
-      <header class="c-header">
-        <h1 class="c-header__title">Create an Account</h1>
-      </header>
-      <!-- Form -->
-      <div class="c-form__wrapper">
+      <div class="wrapper">
+        <!-- Header -->
+        <header class="c-header">
+          <h1 class="c-header__title">Create an Account</h1>
+        </header>
+        <!-- Form -->
+        <div class="c-form__wrapper">
           <!-- First and Last Name -->
-        <form action="#" class="c-form" method="get">
-          <div class="c-form__input-container">
-            <div class="c-form__content">
-            <label class="c-form__item" title="First Name">
-              <div class="c-form-item__label">First Name</div>
-              <input class="c-form__input" type="text" placeholder="Type your first name" />
-            </label>
-          </div>
-          <div class="c-form__content">
-            <label class="c-form__item" title="Last Name">
-              <div class="c-form-item__label">Last Name</div>
-              <input class="c-form__input" type="text" placeholder="Type your last name" />
-            </label>
-          </div>
-          </div>
-          <!-- Email with Aftertext -->
-          <div class="c-form__content c-form__content--big c-form__content--email">
-            <label class="c-form__item" title="First Name">
-              <div class="c-form-item__label">E-mail</div>
-              <input class="c-form__input c-form__input--big" type="email" placeholder="Type your e-mail" />
-              <div class="c-form-item__after-text">
-                We'll never share your email with anyone else.
+          <form action="#" class="c-form" method="get">
+            <div class="c-form__input-container">
+              <div class="c-form__content">
+                <label class="c-form__item" title="First Name">
+                  <div class="c-form-item__label">First Name</div>
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    placeholder="Type your first name"
+                  />
+                </label>
               </div>
-            </label>
-          </div>
-          <!-- Radio-button -->
-          <div class="c-form__content c-form__content--radio">
-            <div class="radio-container"><label class="c-form__item c-form__item--male" for="male">Male<input class="c-form__radio-btn" type="radio" id="male" name="gender" checked />
-            <span class="c-form__custom-radio"></span></label></div>
-            <div class="radio-container"><label class="c-form__item c-form__item--female" for="female">Female<input class="c-form__radio-btn" type="radio" id="female" name="gender" />
-           <span class="c-form__custom-radio"></span></label></div>
-            
-          </div>
-          <!-- Select and City -->
-          <div class="c-form__input-container">
-          <div class="c-form__content">
-            <label class="c-form__item c-form__item--select">
-              <div class="c-form-item__label">Country</div>
-             <select class="c-form__input c-form__input--select" name="country" id="">
-                 <option class="c-form__select--color" value="">Select</option>
-                 <option value="Ukraine">Ukraine</option>
-                 <option value="Germany">Germany</option>
-                 <option value="England">England</option>
-                 <option value="France">France</option>
-             </select>
-             </label>
-          </div>
-          <div class="c-form__content">
-            <label class="c-form__item" title="City">
-              <div class="c-form-item__label">City</div>
-              <input class="c-form__input" type="text" placeholder="Type the name of your city" />
-            </label>
-          </div>
-          </div>
-          <div class="c-form__content c-form__content--big c-form__content--empty">
-            <label class="c-form__item">
-              <input class="c-form__input c-form__input--big c-form__input--empty" type="text" />
-            </label>
-          </div>
-        </form>
-      <!-- Footer -->
-      <footer class="c-footer">
-          <div class="c-footer__text">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Private Policy</a>.</div>
-          <div class="c-footer__line"></div>
-          <div class="c-footer__text">Have an account?<span><a href="#"> Log In</a></span></div>   
-      </footer>
+              <div class="c-form__content">
+                <label class="c-form__item" title="Last Name">
+                  <div class="c-form-item__label">Last Name</div>
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    placeholder="Type your last name"
+                  />
+                </label>
+              </div>
+            </div>
+            <!-- Email with Aftertext -->
+            <div
+              class="c-form__content c-form__content--big c-form__content--email"
+            >
+              <label class="c-form__item" title="First Name">
+                <div class="c-form-item__label">E-mail</div>
+                <input
+                  class="c-form__input c-form__input--big"
+                  type="email"
+                  placeholder="Type your e-mail"
+                />
+                <div class="c-form-item__after-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </label>
+            </div>
+            <!-- Radio-button -->
+            <div class="c-form__content c-form__content--radio">
+              <div class="radio-container">
+                <label class="c-form__item c-form__item--male" for="male"
+                  >Male<input
+                    class="c-form__radio-btn"
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    checked />
+                  <span class="c-form__custom-radio"></span
+                ></label>
+              </div>
+              <div class="radio-container">
+                <label class="c-form__item c-form__item--female" for="female"
+                  >Female<input
+                    class="c-form__radio-btn"
+                    type="radio"
+                    id="female"
+                    name="gender" />
+                  <span class="c-form__custom-radio"></span
+                ></label>
+              </div>
+            </div>
+            <!-- Select and City -->
+            <div class="c-form__input-container">
+              <div class="c-form__content">
+                <label class="c-form__item c-form__item--select">
+                  <div class="c-form-item__label">Country</div>
+                  <select
+                    class="c-form__input c-form__input--select"
+                    name="country"
+                    id=""
+                  >
+                    <option class="c-form__select--color" value="">
+                      Select
+                    </option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Germany">Germany</option>
+                    <option value="England">England</option>
+                    <option value="France">France</option>
+                  </select>
+                </label>
+              </div>
+              <div class="c-form__content">
+                <label class="c-form__item" title="City">
+                  <div class="c-form-item__label">City</div>
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    placeholder="Type the name of your city"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              class="c-form__content c-form__content--big c-form__content--empty"
+            >
+              <label class="c-form__item">
+                <input
+                  class="c-form__input c-form__input--big c-form__input--empty"
+                  type="text"
+                />
+              </label>
+            </div>
+          </form>
+          <!-- Footer -->
+          <footer class="c-footer">
+            <div class="c-footer__text">
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a href="#">Terms of Use</a> and <a href="#">Private Policy</a>.
+            </div>
+            <div class="c-footer__line"></div>
+            <div class="c-footer__text">
+              Have an account?<span><a href="#"> Log In</a></span>
+            </div>
+          </footer>
+        </div>
       </div>
-    </div>
     </div>
   </body>
 </html>

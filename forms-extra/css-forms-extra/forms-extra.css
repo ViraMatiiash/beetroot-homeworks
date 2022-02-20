@@ -24,11 +24,6 @@ body {
   color: var(--c-title-small);
 }
 
-a {
-  text-decoration: none;
-  color: var(--c-input-border-focus);
-}
-
 h1 {
   margin: 0;
 }
@@ -103,60 +98,61 @@ h1 {
   transition: border 0.2s;
 }
 
-/* Radio Buttons */
+/* File load */
 
-.c-form__content--radio {
-  display: flex;
+.c-form__input-container--profile {
+  width: 100%;
+  max-width: 15em;
+  align-items: center;
 }
 
-.radio-container {
-  display: flex;
-  align-content: center;
-  margin: 0 1.25em 1.25em 0;
+.c-form__img {
+  margin-right: 1.25em;
 }
 
-.c-form__item--male,
-.c-form__item--female {
-  display: block;
-  position: relative;
-  padding-left: 1.7em;
+.c-form__input--file {
+  width: 8.75em;
+  height: 1.9em;
+
+  visibility: hidden;
 }
 
-input[type="radio"] {
-  display: none;
-}
-
-.c-form__custom-radio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: var(--c-background);
+.c-form__content--file-load {
   border: 1px solid var(--c-input-border);
-  border-radius: 50%;
-  transition: 0.3s background-color;
+  border-radius: 6px;
+  margin-right: 0.7em;
 }
 
-.c-form__custom-radio:after {
-  content: "";
-  position: absolute;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--c-background);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-input:checked ~ .c-form__custom-radio {
-  background-color: var(--c-input-border-focus);
-  border: 1px solid var(--c-input-border-focus);
-}
-input:checked ~ .c-form__custom-radio:after {
+.c-form__item--file-load {
+  position: relative;
   display: block;
+  height: 1.9em;
+}
+
+.c-form__camera {
+  position: absolute;
+  background-image: url(../assets-forms-extra/camera.png);
+  width: 14px;
+  height: 12px;
+  top: 0.6em;
+  right: 0.5em;
+}
+
+.c-form__input--bin {
+  width: 1.9em;
+  height: 1.9em;
+  background-image: url(../assets-forms-extra/recycle-bin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-form__file-bin-container {
+  display: flex;
+}
+
+.c-form__text {
+  font-size: 0.8em;
+  margin-top: 0.5em;
 }
 
 /* Select */
@@ -164,18 +160,12 @@ input:checked ~ .c-form__custom-radio:after {
 .c-form__input--select {
   width: 15.4em;
   appearance: none;
-  background-image: url(../assets-forms/double-arrow.svg);
+  background-image: url(../assets-forms-extra/double-arrow.svg);
   background-repeat: no-repeat;
   background-position: 13.5em;
   color: var(--c-select-triangle);
 }
 
-/* Footer */
-
-.c-footer__text {
-  text-align: center;
-}
-
-.c-footer__line {
-  border-bottom: 1px solid var(--c-input-border);
+.c-form__input--small {
+  width: 9.4em;
 }

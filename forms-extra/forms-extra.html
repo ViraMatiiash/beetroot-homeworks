@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-forms-extra/forms-extra.css" />
+</head>
+<body>
+    <div>
+      <a href="../index.html" class="base-page-link">Homework Base Page</a>
+    </div>
+     <!-- Whole Page Wrappers -->
+    <div class="page-container">
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="c-header">
+        <h1 class="c-header__title">Profile</h1>
+      </header>
+      <!-- Form -->
+      <div class="c-form__wrapper">
+          <!-- User picture with file load -->
+          <div class="c-form__input-container c-form__input-container--profile">
+              <div class="c-form__img-container"><img class="c-form__img" src="./assets-forms-extra/user-pic.png" alt="User Picture"></div>
+          <div class="c-form__file-group-container">
+              <div class="c-form__file-bin-container"><div class="c-form__content c-form__content--file-load"><label class="c-form__item c-form__item--file-load" title="File"><input class="c-form__input c-form__input--file" type="file"><span class="c-form__camera"></span></label></div>
+          <div class="c-form__content"><label class="c-form__item" title="Recycle Bin"><input class="c-form__input c-form__input--bin" type="text"><span class="c-form__recycle-bin"></span></label></div></div>
+          
+          <div class="c-form__text">Up to 1 MB (300x300 px)</div>
+        </div>
+    </div>  
+          <!-- First and Last Name -->
+            <form action="#" class="c-form" method="get">
+          <div class="c-form__input-container">
+            <div class="c-form__content">
+            <label class="c-form__item" title="Name">
+              <div class="c-form-item__label">Name</div>
+              <input class="c-form__input" type="text" placeholder="Type your name" />
+            </label>
+          </div>
+          <div class="c-form__content">
+            <label class="c-form__item" title="E-mail">
+              <div class="c-form-item__label">E-mail</div>
+              <input class="c-form__input" type="email" placeholder="Type your e-mail" />
+            </label>
+          </div>
+          </div>
+           <!-- Select and City -->
+          <div class="c-form__input-container">
+          <div class="c-form__content">
+            <label class="c-form__item c-form__item--select">
+              <div class="c-form-item__label">Country</div>
+             <select class="c-form__input c-form__input--select" name="country" id="">
+                 <option class="c-form__select--color" value="">Select</option>
+                 <option value="Ukraine">Ukraine</option>
+                 <option value="Germany">Germany</option>
+                 <option value="England">England</option>
+                 <option value="France">France</option>
+             </select>
+             </label>
+          </div>
+          <div class="c-form__content">
+            <label class="c-form__item" title="City">
+              <div class="c-form-item__label">City</div>
+              <input class="c-form__input" type="text" placeholder="Type the name of your city" />
+            </label>
+          </div>
+          </div>
+          <!-- Zip Code and Phone Number -->
+           <form action="#" class="c-form" method="get">
+          <div class="c-form__input-container">
+            <div class="c-form__content">
+            <label class="c-form__item" title="Name">
+              <div class="c-form-item__label">Zip Code</div>
+              <input class="c-form__input" type="number" placeholder="Type your zip code" />
+            </label>
+          </div>
+          <div class="c-form__content">
+            <label class="c-form__item" title="E-mail">
+              <div class="c-form-item__label">Phone Number</div>
+              <input class="c-form__input" type="tel" placeholder="Type your phone number" />
+            </label>
+          </div>
+          </div>
+           <div class="c-form__content c-form__content--small c-form__content--empty">
+            <label class="c-form__item">
+              <input class="c-form__input c-form__input--small c-form__input--empty" type="text" />
+            </label>
+          </div>
+          </form>
+      </div> 
+</body>
+</html>
