@@ -101,6 +101,7 @@ h1 {
 
 .c-form__input:focus {
   border: 1px solid var(--c-input-border-focus);
+  transition: border .2s;
 }
 
 /* Radio Buttons */
