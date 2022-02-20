@@ -21,7 +21,8 @@
     <div>
       <a href="../index.html" class="base-page-link">Homework Base Page</a>
     </div>
-    <!-- Whole Page Wrapper -->
+    <!-- Whole Page Wrappers -->
+    <div class="page-container">
     <div class="wrapper">
       <!-- Header -->
       <header class="c-header">
@@ -56,15 +57,17 @@
             </label>
           </div>
           <!-- Radio-button -->
-          <div class="c-form__content">
-            <input class="c-form__radio-btn" type="radio" id="male" name="gender" />
-            <label class="c-form__item" for="male">Male</label>
-            <input class="c-form__radio-btn" type="radio" id="female" name="gender" />
-            <label class="c-form__item" for="female">Female</label>
+          <div class="c-form__content c-form__content--radio">
+            <div class="radio-container"><label class="c-form__item c-form__item--male" for="male">Male<input class="c-form__radio-btn" type="radio" id="male" name="gender" checked />
+            <span class="c-form__custom-radio"></span></label></div>
+            <div class="radio-container"><label class="c-form__item c-form__item--female" for="female">Female<input class="c-form__radio-btn" type="radio" id="female" name="gender" />
+           <span class="c-form__custom-radio"></span></label></div>
+            
           </div>
           <!-- Select and City -->
           <div class="c-form__input-container">
           <div class="c-form__content">
+            <label class="c-form__item c-form__item--select">
               <div class="c-form-item__label">Country</div>
              <select class="c-form__input c-form__input--select" name="country" id="">
                  <option class="c-form__select--color" value="">Select</option>
@@ -73,7 +76,7 @@
                  <option value="England">England</option>
                  <option value="France">France</option>
              </select>
-            </label>
+             </label>
           </div>
           <div class="c-form__content">
             <label class="c-form__item" title="City">
@@ -92,9 +95,10 @@
       <footer class="c-footer">
           <div class="c-footer__text">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Private Policy</a>.</div>
           <div class="c-footer__line"></div>
-          <div class="c-footer__text">Have an account?<span><a href="#">Log In</a></span></div>   
+          <div class="c-footer__text">Have an account?<span><a href="#"> Log In</a></span></div>   
       </footer>
       </div>
+    </div>
     </div>
   </body>
 </html>
