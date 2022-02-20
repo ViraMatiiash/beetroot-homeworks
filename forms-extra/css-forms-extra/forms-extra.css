@@ -113,8 +113,11 @@ h1 {
 .c-form__input--file {
   width: 8.75em;
   height: 1.9em;
-
   visibility: hidden;
+}
+
+input[type="button"] {
+    background-color: var(--c-background);
 }
 
 .c-form__content--file-load {
