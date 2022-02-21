@@ -33,6 +33,10 @@ h1 {
   margin: 0;
 }
 
+input {
+  width: 15.4em;
+}
+
 .page-container {
   background-color: var(--c-page-background);
   height: 100vw;
