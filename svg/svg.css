@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c-red: #FF545B;
+    --c-yellow: #FFCF6D;
+    --c-bg: #414453;
+    --c-line: #808391;
+}
+
+.wrapper {
+    background-color: var(--c-bg);
+}
+
+.circle--yellow {
+    fill: var(--c-yellow);
+}
+
+.circle--red {
+    fill: var(--c-red);
+}
+
+.icon-block {
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.circle, .limb {
+    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center center;
+    transform: rotate(180deg);    
+}
+
+
+
+
