@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c-bg: #ffffff;
+    --c-bg-footer: #16133D; 
+    --c-services: #7690A8;
+    --c-bg-icon: #EFEEF3;
+    --c-border: #E5EAF4;
+    --c-border-hover: #3DB370;
+    --c-title: #16133D;
+    --ff-title: 'Nunito Sans', sans-serif;
+    --ff-card: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--ff-card);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 75em;
+    padding: 2.5em 1.5em;
+}
