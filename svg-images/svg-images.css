@@ -15,6 +15,7 @@
     --c-credit-card-line-middle: #f9eab0;
     --c-credit-card-circle: #db2215;
     --c-credit-card-circle-blue: #245ea9;
+    --c-calculator: #fff;
 }
 
 .container {
@@ -59,7 +60,7 @@
 /* Credit Card */
 .c-credit-card__background {
     fill: var(--c-credit-card-bg);
-    
+
 }
 
 .c-credit-card__line--up {
@@ -87,4 +88,24 @@ fill: var(--c-credit-card-circle);
 
 .c-credit-card__circle--blue {
     fill: var(--c-credit-card-circle-blue);
+}
+
+/* Calculator */
+
+.c-calculator {
+    fill: var(--c-calculator);
+    
+    stroke: var(--c-calculator);
+    stroke-linecap: round;
+}
+.c-calculator__bg {
+    fill: var(--c-crone);
+}
+
+.c-calculator__screen {
+    stroke-width: 40;
+}
+
+.c-calculator__plus, .c-calculator__minus, .c-calculator__multiply, .c-calculator__divide, .c-calculator__plus--vertical, .c-calculator__multiply--above {
+    stroke-width: 16;
 }
