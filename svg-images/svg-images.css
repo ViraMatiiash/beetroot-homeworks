@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c-circle-background: #fbd971;
+    --c-circle-eyes: #f29c1f;
+    --c-circle-mouth: #f0c419;
+}
+
+/* Circle sceptic */
+
+.c-circle__background {
+    fill: var(--c-circle-background);
+}
+
+.c-circle__eye, .c-circle__mouth {
+    stroke-width: 15;
+    stroke-linecap: round;
+}
+
+.c-circle__eye {
+    stroke: var(--c-circle-eyes);
+}
+
+.c-circle__mouth {
+    stroke: var(--c-circle-mouth);
+}
