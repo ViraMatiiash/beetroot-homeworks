@@ -9,6 +9,11 @@
     --c-circle-eyes: #f29c1f;
     --c-circle-mouth: #f0c419;
     --c-circle-eyes-surprised: #af8066;
+    --c-crone: #000;
+}
+
+.container {
+    text-align: center;
 }
 
 /* Circle sceptic */
@@ -34,4 +39,14 @@
 
 .c-circle__background--eye {
     fill: var(--c-circle-eyes-surprised);
+}
+
+/* Crone */
+
+.c-crone__color, .c-crone__line {
+    fill: transparent;
+    stroke: var(--c-crone);
+    stroke-width: 10;
+    stroke-linejoin: round;
+    stroke-linecap: round;
 }
