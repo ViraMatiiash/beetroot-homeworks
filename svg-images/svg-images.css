@@ -10,6 +10,11 @@
     --c-circle-mouth: #f0c419;
     --c-circle-eyes-surprised: #af8066;
     --c-crone: #000;
+    --c-credit-card-bg: #f0c41b;
+    --c-credit-card-line-up: #806f5e;
+    --c-credit-card-line-middle: #f9eab0;
+    --c-credit-card-circle: #db2215;
+    --c-credit-card-circle-blue: #245ea9;
 }
 
 .container {
@@ -49,4 +54,37 @@
     stroke-width: 10;
     stroke-linejoin: round;
     stroke-linecap: round;
+}
+
+/* Credit Card */
+.c-credit-card__background {
+    fill: var(--c-credit-card-bg);
+    
+}
+
+.c-credit-card__line--up {
+    stroke: var(--c-credit-card-line-up);
+    stroke-width: 35;
+}
+
+.c-credit-card__line--middle, .c-credit-card__line--dash {
+    stroke: var(--c-credit-card-line-middle);
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.c-credit-card__line--middle {
+    stroke-dasharray:45 20 45;
+}
+
+.c-credit-card__line--dash {
+   stroke-dasharray: 4 20 10 20; 
+}
+
+.c-credit-card__circle {
+fill: var(--c-credit-card-circle);
+}
+
+.c-credit-card__circle--blue {
+    fill: var(--c-credit-card-circle-blue);
 }
