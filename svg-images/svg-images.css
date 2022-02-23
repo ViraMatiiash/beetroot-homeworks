@@ -8,6 +8,7 @@
     --c-circle-background: #fbd971;
     --c-circle-eyes: #f29c1f;
     --c-circle-mouth: #f0c419;
+    --c-circle-eyes-surprised: #af8066;
 }
 
 /* Circle sceptic */
@@ -27,4 +28,10 @@
 
 .c-circle__mouth {
     stroke: var(--c-circle-mouth);
+}
+
+/* Circle surprised */
+
+.c-circle__background--eye {
+    fill: var(--c-circle-eyes-surprised);
 }
