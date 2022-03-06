@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap");
+
+$ff-text: "Lato", sans-serif;
+$ff-headings: "Red Hat Display", sans-serif;
+
+$colors: (
+  "heading": #000,
+  "background": #fff,
+  "text": #565656,
+  "description": #7b7b7b,
+  "footer-background": #f4f4f4,
+);
+
+$font-sizes: (
+  "main": 16px,
+  "title": 32px,
+  "profession": 20px,
+  "subtitle": 24px,
+  "description": 12px,
+);
