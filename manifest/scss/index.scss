@@ -1,43 +1,49 @@
 @import "reset";
 @import "variables";
+@import "mixins";
+@import "burger";
+@import "./media-queries.scss/mobile";
+@import "./media-queries.scss/tablet-portrait";
+@import "./media-queries.scss/tablet-landscape";
+@import "./media-queries.scss/desktop";
 
+// Page styles, tag styles
 body {
   background-color: map-get($colors, "background-color");
   min-height: 100vh;
+  font-size: map-get($font-sizes, "main");
+  color: map-get($colors, "heading");
+  font-family: $ff-text;
 }
 
-.menu-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  border: 3px solid map-get($colors, "description");
+img {
+  width: 100%;
+}
 
-  &__burger {
-    width: 50px;
-    height: 6px;
-    background: map-get($colors, "description");
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-    transition: all 0.5s ease-in-out;
-  }
+a {
+  text-decoration: none;
+  color: map-get($colors, "heading")
+}
 
-  &::before,
-  &::after {
-    @extend .menu-btn__burger;
-    content: "";
-    position: absolute; 
-  }
+li {
+  list-style: none;
+}
 
-  &::before {
-    transform: translateY(-16px);
-  }
+// Page Wrapper
 
-  &::after {
-    transform: translateY(16px);
+.wrapper {
+padding: 1.5em 1.25em 4.25em;
+}
+
+// * Header
+
+.header {
+  @include flexSpaceBetween;
+
+  &__container {
+    @include flexSpaceBetween;
   }
 }
+
+
+

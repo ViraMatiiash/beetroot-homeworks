@@ -8,15 +8,29 @@ html(lang="en")
     link(rel="stylesheet", href="../scss/index.css")
     title Manifest
   body 
-    header.header 
-      .logo
-        .logo__text
-          svg(width="135" height="13")
-            use(xlink:href="../manifest.svg#manifest-logo")
-      .header__container
-        .search__icon
-          svg(width="16" height="16")
-            use(xlink:href="../manifest.svg#magnifier")
-        .menu-btn
-          .menu-btn__burger
+    .wrapper 
+      header.header 
+        .logo
+          .logo__text
+            svg(width="135" height="13")
+              use(xlink:href="../manifest.svg#manifest-logo")
+        .header__container
+         .search__icon
+            svg(width="16" height="16")
+              use(xlink:href="../manifest.svg#magnifier")
+         nav.navigation 
+           ul.navigation__menu 
+             li.navigation__item 
+                a.navigation__link(href="#") HOME
+             li.navigation__item 
+                a.navigation__link(href="#") ABOUT
+             li.navigation__item 
+                a.navigation__link(href="#") WORKS
+             li.navigation__item 
+                a.navigation__link(href="#") BLOG
+             li.navigation__item 
+                a.navigation__link(href="#") CONTACT     
+         .menu-btn
+            .menu-btn__burger
+      script(src="../js/index.js") 
               
