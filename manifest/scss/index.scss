@@ -16,23 +16,40 @@ body {
   font-family: $ff-text;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 img {
   width: 100%;
 }
 
+svg {
+  width: 100%;
+  vertical-align: middle;
+}
+
 a {
   text-decoration: none;
-  color: map-get($colors, "heading")
+  color: map-get($colors, "background");
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1rem;
+  padding-bottom: 0.1rem;
+  
+  &:hover {
+    color: map-get($colors, "background");
+    border-bottom: 2px solid map-get($colors, "background");
+    border-radius: 1px;
+  }
+  &:active,
+  &:focus {
+    color: map-get($colors, "active");
+    border-color: map-get($colors, "active");
+  }
 }
 
 li {
   list-style: none;
-}
-
-// Page Wrapper
-
-.wrapper {
-padding: 1.5em 1.25em 4.25em;
 }
 
 // * Header
@@ -44,6 +61,3 @@ padding: 1.5em 1.25em 4.25em;
     @include flexSpaceBetween;
   }
 }
-
-
-
