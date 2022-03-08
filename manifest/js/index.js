@@ -14,5 +14,5 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const nav = document.querySelector(".navigation");
+const nav = document.querySelector(".c-navigation");
 navOn = false;

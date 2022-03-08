@@ -52,10 +52,10 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 576px) {
   body {
     width: 100%;
-    max-width: 375px;
+    max-width: 576px;
   }
 
   .header {
@@ -68,7 +68,7 @@
     margin-left: 0.75rem;
   }
 
-  .navigation {
+  .c-navigation {
     background-color: #2e2e2e;
     line-height: 1.5rem;
     transition: all 2s ease-in-out;
@@ -76,35 +76,49 @@
     display: none;
     text-align: center;
   }
-  .navigation__menu {
+  .c-navigation__menu {
     padding: 0 1rem;
   }
-}
-.home {
-  margin-top: 4.6rem;
-  line-height: 3.25rem;
-  padding: 0 1rem;
-}
-.home__title {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-}
 
-.carousel-inner__custom {
-  padding-left: 1.5rem;
-  padding: 0 1rem;
-}
+  .c-home {
+    margin-top: 4.6rem;
+    line-height: 3.25rem;
+    padding: 0 1rem;
+  }
+  .c-home__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
 
-.carousel-item__custom {
-  max-width: 27rem;
-  margin-top: 2.5rem;
-}
+  .carousel__text {
+    margin-bottom: 3rem;
+  }
 
-.carousel__text {
-  margin-top: 1rem;
+  .c-description {
+    padding: 0 1rem;
+  }
+  .c-description__container {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .c-description__title {
+    margin-bottom: 1.75rem;
+  }
+  .c-description__subtitle {
+    margin-bottom: 1.75rem;
+  }
+  .c-description .e-arrow {
+    width: 100%;
+    max-width: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .c-description__text {
+    color: #565656;
+    line-height: 27px;
+  }
 }
-
 body {
   min-height: 100vh;
   font-size: 16px;
@@ -132,7 +146,7 @@ a {
   margin-bottom: 1rem;
   padding-bottom: 0.1rem;
 }
-a:hover {
+a:hover:not(.e-arrow) {
   color: #fff;
   border-bottom: 2px solid #fff;
   border-radius: 1px;
@@ -155,4 +169,23 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.carousel-inner__custom {
+  padding-left: 1.5rem;
+  padding: 0 1rem;
+}
+
+.carousel-item__custom {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.carousel__text {
+  margin-top: 1rem;
+}
+
+.c-description {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=index.css.map */

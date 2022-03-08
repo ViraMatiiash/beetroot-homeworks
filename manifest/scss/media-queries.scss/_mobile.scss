@@ -1,7 +1,7 @@
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 576px) {
   body {
     width: 100%;
-    max-width: 375px;
+    max-width: 576px;
   }
 
   // Header
@@ -18,7 +18,7 @@
     margin-left: 0.75rem;
   }
 
-  .navigation {
+  .c-navigation {
     background-color: map-get($colors, "burger");
     line-height: 1.5rem;
     transition: all 2s ease-in-out;
@@ -29,12 +29,11 @@
     &__menu {
       @include pagePadding;
     }
-    }
   }
 
   // Main Info
 
-  .home {
+  .c-home {
     margin-top: 4.6rem;
     line-height: 3.25rem;
     @include pagePadding;
@@ -49,17 +48,41 @@
   }
 
   // Carousel
-  .carousel-inner__custom {
-    padding-left: 1.5rem;
-    @include pagePadding;
-  }
-
-  .carousel-item__custom {
-    max-width: 27rem;
-    margin-top: 2.5rem;
-  }
 
   .carousel__text {
-    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
+  // Description
+
+  .c-description {
+    @include pagePadding;
+
+    &__container {
+      font: {
+        family: $ff-text;
+        size: map-get($font-sizes, "profession");
+        weight: normal;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.75rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 1.75rem;
+    }
+
+    .e-arrow {
+      width: 100%;
+      max-width: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      color: map-get($colors, "text");
+      line-height: 27px;
+    }
+  }
+}
