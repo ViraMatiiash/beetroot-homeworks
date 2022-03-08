@@ -52,7 +52,7 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 375px) and (max-width: 576px) {
+@media (min-width: 375px) {
   body {
     width: 100%;
     max-width: 576px;
@@ -187,5 +187,7 @@ li {
 
 .c-description {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }/*# sourceMappingURL=index.css.map */

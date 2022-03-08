@@ -81,6 +81,6 @@ li {
 // Description
 
 .c-description {
-  display: flex;
+  @include flexSpaceBetween;
   flex-wrap: wrap;
 }
