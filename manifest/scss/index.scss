@@ -84,3 +84,58 @@ li {
   @include flexSpaceBetween;
   flex-wrap: wrap;
 }
+
+// Latest Posts
+
+.c-latest-posts {
+
+  &__arrow-container {
+    @include flexSpaceBetween;
+    width: 6.25rem;
+  }
+
+  &__view-all {
+    color: map-get($colors, "description");
+    
+    font: {
+      size: map-get($font-sizes, "main");
+      weight: normal;
+    }
+  }
+
+  &__title {
+    color: map-get($colors, "heading");
+    letter-spacing: 2px;
+
+    font: {
+      family: $ff-headings;
+      size: map-get($font-sizes, "subtitle");
+      weight: normal;
+    }
+  }
+
+  &__flex-container {
+    @include flexSpaceBetween;
+    flex-wrap: wrap;
+  }
+}
+
+// Interface Design
+
+.c-interface-design, .c-technology, .c-visual-design {
+
+    &__text-container {
+      font-size: map-get($font-sizes, "description");
+      color: map-get($colors, "description");
+    }
+
+    &__title {
+      @extend .c-latest-posts__title;
+    }
+
+    &__text {
+      @extend .c-description__text;
+    }
+  }
+
+ 

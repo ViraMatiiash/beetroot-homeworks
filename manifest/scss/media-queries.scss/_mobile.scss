@@ -83,6 +83,43 @@
     &__text {
       color: map-get($colors, "text");
       line-height: 27px;
+      margin-bottom: 3rem;
+    }
+  }
+
+  // Latest Posts
+
+  .c-latest-posts {
+    @include pagePadding;
+
+    &__title-container {
+      margin-bottom: 3rem;
+    }
+
+    &__title {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  // Interface Design
+
+  .c-interface-design,
+  .c-technology,
+  .c-visual-design {
+    &__img-container {
+      margin-bottom: 1rem;
+    }
+
+    &__text-container, &__title {
+      margin-bottom: 1.5rem;
+    }
+
+    &__description {
+      margin-bottom: 0.5rem;
+    }
+
+    &__text {
+      margin-bottom: 3rem;
     }
   }
 }

@@ -114,9 +114,43 @@
     max-width: 1.5rem;
     margin-bottom: 3rem;
   }
-  .c-description__text {
+  .c-description__text, .c-interface-design__text, .c-technology__text, .c-visual-design__text {
     color: #565656;
     line-height: 27px;
+    margin-bottom: 3rem;
+  }
+
+  .c-latest-posts {
+    padding: 0 1rem;
+  }
+  .c-latest-posts__title-container {
+    margin-bottom: 3rem;
+  }
+  .c-latest-posts__title, .c-interface-design__title, .c-technology__title, .c-visual-design__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .c-interface-design__img-container,
+.c-technology__img-container,
+.c-visual-design__img-container {
+    margin-bottom: 1rem;
+  }
+  .c-interface-design__text-container, .c-interface-design__title,
+.c-technology__text-container,
+.c-technology__title,
+.c-visual-design__text-container,
+.c-visual-design__title {
+    margin-bottom: 1.5rem;
+  }
+  .c-interface-design__description,
+.c-technology__description,
+.c-visual-design__description {
+    margin-bottom: 0.5rem;
+  }
+  .c-interface-design__text,
+.c-technology__text,
+.c-visual-design__text {
+    margin-bottom: 3rem;
   }
 }
 body {
@@ -190,4 +224,34 @@ li {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.c-latest-posts__arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6.25rem;
+}
+.c-latest-posts__view-all {
+  color: #7b7b7b;
+  font-size: 16px;
+  font-weight: normal;
+}
+.c-latest-posts__title, .c-interface-design__title, .c-technology__title, .c-visual-design__title {
+  color: #000;
+  letter-spacing: 2px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+.c-latest-posts__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-interface-design__text-container, .c-technology__text-container, .c-visual-design__text-container {
+  font-size: 12px;
+  color: #7b7b7b;
 }/*# sourceMappingURL=index.css.map */
