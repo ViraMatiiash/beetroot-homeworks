@@ -16,7 +16,58 @@
 
   .menu-btn {
     margin-left: 0.75rem;
+    position: relative;
+    @include flexCenter;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &__burger {
+      width: 24px;
+      height: 2px;
+      background: map-get($colors, "heading");
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+      width: 24px;
+      height: 2px;
+      background: map-get($colors, "heading");
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      transform: translateY(-7px);
+    }
+
+    &::after {
+      transform: translateY(7px);
+    }
   }
+
+  // Animation
+
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn.open::after {
+    transform: rotate(-45deg);
+  }
+
+  // Navigation
 
   .c-navigation {
     background-color: map-get($colors, "burger");
@@ -110,7 +161,8 @@
       margin-bottom: 1rem;
     }
 
-    &__text-container, &__title {
+    &__text-container,
+    &__title {
       margin-bottom: 1.5rem;
     }
 
@@ -122,4 +174,48 @@
       margin-bottom: 3rem;
     }
   }
+
+  // Need a project?
+
+  .c-project {
+    &__contacts {
+      padding-top: 4rem;
+    }
+
+    &__title {
+      color: map-get($colors, "heading");
+      font-size: map-get($font-sizes, "title");
+      margin-bottom: 1.25rem;
+    }
+
+    &__telephone {
+      margin-bottom: 1rem;
+    }
+
+    &__contacts {
+      margin-bottom: 3rem;
+    }
+
+    &__networks {
+      padding: 0;
+    }
+
+    &__network {
+      margin-bottom: 1.5rem;
+    }
+
+    &__network:last-child {
+      margin-bottom: 3rem;
+    }
+
+    &__copyright {
+      padding-bottom: 4.25rem;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+ .c-project {
+   text-align: center;
+ } 
 }

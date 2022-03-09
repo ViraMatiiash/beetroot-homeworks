@@ -5,53 +5,6 @@
   padding: 0;
 }
 
-.menu-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger {
-  width: 24px;
-  height: 2px;
-  background: #000;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn::before, .menu-btn::after {
-  width: 24px;
-  height: 2px;
-  background: #000;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-}
-.menu-btn::before {
-  transform: translateY(-7px);
-}
-.menu-btn::after {
-  transform: translateY(7px);
-}
-
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(50px);
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open::before {
-  transform: rotate(45deg);
-}
-
-.menu-btn.open::after {
-  transform: rotate(-45deg);
-}
-
 @media (min-width: 375px) {
   body {
     width: 100%;
@@ -66,6 +19,50 @@
 
   .menu-btn {
     margin-left: 0.75rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger {
+    width: 24px;
+    height: 2px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn::before, .menu-btn::after {
+    width: 24px;
+    height: 2px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+  }
+  .menu-btn::before {
+    transform: translateY(-7px);
+  }
+  .menu-btn::after {
+    transform: translateY(7px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn.open::after {
+    transform: rotate(-45deg);
   }
 
   .c-navigation {
@@ -114,7 +111,9 @@
     max-width: 1.5rem;
     margin-bottom: 3rem;
   }
-  .c-description__text, .c-interface-design__text, .c-technology__text, .c-visual-design__text {
+  .c-description__text, .c-interface-design__text,
+.c-technology__text,
+.c-visual-design__text {
     color: #565656;
     line-height: 27px;
     margin-bottom: 3rem;
@@ -126,7 +125,9 @@
   .c-latest-posts__title-container {
     margin-bottom: 3rem;
   }
-  .c-latest-posts__title, .c-interface-design__title, .c-technology__title, .c-visual-design__title {
+  .c-latest-posts__title, .c-interface-design__title,
+.c-technology__title,
+.c-visual-design__title {
     margin-bottom: 0.5rem;
   }
 
@@ -151,6 +152,38 @@
 .c-technology__text,
 .c-visual-design__text {
     margin-bottom: 3rem;
+  }
+
+  .c-project__contacts {
+    padding-top: 4rem;
+  }
+  .c-project__title {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 1.25rem;
+  }
+  .c-project__telephone {
+    margin-bottom: 1rem;
+  }
+  .c-project__contacts {
+    margin-bottom: 3rem;
+  }
+  .c-project__networks {
+    padding: 0;
+  }
+  .c-project__network {
+    margin-bottom: 1.5rem;
+  }
+  .c-project__network:last-child {
+    margin-bottom: 3rem;
+  }
+  .c-project__copyright {
+    padding-bottom: 4.25rem;
+  }
+}
+@media (min-width: 400px) {
+  .c-project {
+    text-align: center;
   }
 }
 body {
@@ -237,7 +270,9 @@ li {
   font-size: 16px;
   font-weight: normal;
 }
-.c-latest-posts__title, .c-interface-design__title, .c-technology__title, .c-visual-design__title {
+.c-latest-posts__title, .c-interface-design__title,
+.c-technology__title,
+.c-visual-design__title {
   color: #000;
   letter-spacing: 2px;
   font-family: "Red Hat Display", sans-serif;
@@ -251,7 +286,24 @@ li {
   flex-wrap: wrap;
 }
 
-.c-interface-design__text-container, .c-technology__text-container, .c-visual-design__text-container {
+.c-interface-design__text-container,
+.c-technology__text-container,
+.c-visual-design__text-container {
   font-size: 12px;
   color: #7b7b7b;
+}
+.c-project {
+  background-color: #f4f4f4;
+  padding: 0 1rem;
+}
+.c-project__network-link, .c-project__link {
+  color: #000;
+  font-size: 16px;
+}
+.c-project__title {
+  letter-spacing: 2px;
+}
+.c-project__copyright {
+  color: #000;
+  font-size: 12px;
 }/*# sourceMappingURL=index.css.map */
