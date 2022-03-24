@@ -1,0 +1,11 @@
+include ./navigation
+
+mixin header()
+  header.c-header 
+    .c-header__wrapper
+      +svg('logo', './future-lease.svg#logo')
+      +navigation('#', 'Home')
+      .header__icons
+        +svg('icon-facebook', './future-lease.svg#facebook')
+        +svg('icon-twitter', './future-lease.svg#twitter')
+        +svg('icon-linkeid', './future-lease.svg#linkedin')   

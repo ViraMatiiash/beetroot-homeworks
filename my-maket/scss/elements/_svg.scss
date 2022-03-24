@@ -1,0 +1,6 @@
+.facebook {
+  &__line {
+    stroke: map-get($colors, "button-bg");
+    stroke-width: 4px;
+  }
+}

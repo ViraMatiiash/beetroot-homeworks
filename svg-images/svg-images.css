@@ -16,6 +16,7 @@
     --c-credit-card-circle: #db2215;
     --c-credit-card-circle-blue: #245ea9;
     --c-calculator: #fff;
+    --c-youtube-bg: #d8362a;
 }
 
 .container {
@@ -108,4 +109,9 @@ fill: var(--c-credit-card-circle);
 
 .c-calculator__plus, .c-calculator__minus, .c-calculator__multiply, .c-calculator__divide, .c-calculator__plus--vertical, .c-calculator__multiply--above {
     stroke-width: 16;
+}
+
+/* YouTube */
+.c-youtube__bg {
+    fill: var(--c-youtube-bg);
 }

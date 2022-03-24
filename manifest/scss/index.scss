@@ -2,7 +2,6 @@
 @import "variables";
 @import "mixins";
 @import "./media-queries.scss/mobile";
-@import "./media-queries.scss/tablet-portrait";
 @import "./media-queries.scss/tablet-landscape";
 @import "./media-queries.scss/desktop";
 
@@ -110,11 +109,6 @@ li {
       size: map-get($font-sizes, "subtitle");
       weight: normal;
     }
-  }
-
-  &__flex-container {
-    @include flexSpaceBetween;
-    flex-wrap: wrap;
   }
 }
 

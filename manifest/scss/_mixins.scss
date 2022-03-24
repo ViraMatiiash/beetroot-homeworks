@@ -14,3 +14,8 @@
 @mixin pagePadding {
   padding: 0 1rem;
 }
+
+// Tablet - Portrait
+@mixin tabletLandscapePad {
+ padding: 0 3rem;
+}

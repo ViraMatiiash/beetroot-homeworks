@@ -1,7 +1,6 @@
-@media (min-width: 375px) {
+@media (min-width: 375px), (max-width: 768px) {
   body {
-    width: 100%;
-    max-width: 576px;
+    width: 100%; 
   }
 
   // Header

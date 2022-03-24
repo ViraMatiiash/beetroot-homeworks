@@ -5,10 +5,9 @@
   padding: 0;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px), (max-width: 768px) {
   body {
     width: 100%;
-    max-width: 576px;
   }
 
   .header {
@@ -186,6 +185,29 @@
     text-align: center;
   }
 }
+@media (min-width: 768px), (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 1rem;
+    padding-top: 6.25rem;
+    margin-bottom: 8rem;
+  }
+
+  .c-navigation {
+    background-color: #2e2e2e;
+    line-height: 1.5rem;
+    transition: all 2s ease-in-out;
+    padding: 1rem 0;
+    display: none;
+    text-align: center;
+  }
+  .c-navigation__menu {
+    padding: 0 1rem;
+  }
+}
 body {
   min-height: 100vh;
   font-size: 16px;
@@ -278,12 +300,6 @@ li {
   font-family: "Red Hat Display", sans-serif;
   font-size: 24px;
   font-weight: normal;
-}
-.c-latest-posts__flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .c-interface-design__text-container,

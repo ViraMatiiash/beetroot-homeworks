@@ -1,0 +1,30 @@
+@media (min-width: 768px), (max-width: 992px) {
+
+  body {
+    width: 100%; 
+  }
+
+  // Header
+
+  .header {
+    @include pagePadding;
+    padding-top: 6.25rem;
+    margin-bottom: 8rem;
+  }
+
+
+  // Navigation
+
+  .c-navigation {
+    background-color: map-get($colors, "burger");
+    line-height: 1.5rem;
+    transition: all 2s ease-in-out;
+    padding: 1rem 0;
+    display: none;
+    text-align: center;
+
+    &__menu {
+      @include pagePadding;
+    }
+  }
+}
