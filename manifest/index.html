@@ -1,184 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./scss/index.css" />
-  <title>Manifest</title>
-</head>
-
-<body>
-  <!-- Homework Homepage -->
-  <div class="homework">
-        <a style="color: grey" href="../index.html" class="base-page-link">Homework Base Page</a>
-    </div>
-  <!-- Wrapper -->
-  <div class="wrapper">
-    <!-- * Header -->
-    <header class="header">
-      <div class="logo">
-        <div class="logo__text">
-          <svg width="135" height="13">
-            <use xlink:href="./manifest.svg#manifest-logo"></use>
-          </svg>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Manifest</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <div class="c-logo">
+        <img
+          class="c-logo__image"
+          src="./assets-manifest/icons/manifest-logo.svg"
+          alt="Manifest Logotype"
+        />
       </div>
-      <div class="header__container">
-        <div class="search__icon">
-          <svg width="16" height="16">
-            <use xlink:href="./manifest.svg#magnifier"></use>
-          </svg>
-        </div>
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
+      <div class="c-header__nav-container">
+        <label for="magnifier">
+          <input type="text" name="magnifier" class="magnifier__input" /><img
+            src="./assets-manifest/icons/magnifier-icon.svg"
+            alt="Magnifier"
+        /></label>
       </div>
     </header>
-    <!-- c-Navigation -->
-    <nav class="c-navigation">
-      <ul class="c-navigation__menu">
-        <li class="c-navigation__item">
-          <a class="c-navigation__link" href="#">Home</a>
-          <div class="c-navigation__underline"></div>
-        </li>
-        <li class="c-navigation__item">
-          <a class="c-navigation__link" href="#">About</a>
-          <div class="c-navigation__underline"></div>
-        </li>
-        <li class="c-navigation__item">
-          <a class="c-navigation__link" href="#">Works</a>
-          <div class="c-navigation__underline"></div>
-        </li>
-        <li class="c-navigation__item">
-          <a class="c-navigation__link" href="#">Blog</a>
-          <div class="c-navigation__underline"></div>
-        </li>
-        <li class="c-navigation__item">
-          <a class="c-navigation__link" href="#">Contact</a>
-          <div class="c-navigation__underline"></div>
-        </li>
-      </ul>
-    </nav>
-    <!-- * Main Info -->
-    <div class="c-home">
-      <h1 class="c-home__title">
-        Manifest is a newborn theme. Clean, simple and fast.
-      </h1>
-    </div>
-    <!-- Carousel -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner carousel-inner__custom">
-        <div class="carousel-item active carousel-item__custom">
-          <img src="./assets-manifest/home-mobile/mixkit-inspo-img.png" class="d-block w-100" alt="Mixkit Inspo Image">
-          <h5 class="carousel__text">Mixkit Inspo</h5>
-        </div>
-        <div class="carousel-item carousel-item__custom">
-          <img src="./assets-manifest/home-mobile/abalone-img.png" class="d-block w-100" alt="Abalone Image">
-          <h5 class="carousel__text">Abalone</h5>
-        </div>
-        <div class="carousel-item carousel-item__custom">
-          <img src="./assets-manifest/home-mobile/simone-hutsch-img.png" class="d-block w-100" alt="Simone Hutsch">
-          <h5 class="carousel__text">Simone Hutsch</h5>
-        </div>
-      </div>
-    </div>
-    <!-- Description -->
-    <div class="c-description">
-      <div class="c-description__container">
-        <div class="c-description__title">Full-time UI/UX designer</div>
-        <div class="c-description__subtitle">Head of Design at <br> VeronaLabs.com</div>
-        <div class="e-arrow">
-          <a href="#">
-          <svg width="24" height="12">
-            <use xlink:href="./manifest.svg#arrow"></use>
-          </svg>
-          </a>
-        </div>
-        </div>
-          <div class="c-description__text">
-            <p>We work with clients around the world from our headquarters in Charleston, South Carolina. </p>
-            <p>We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
-          </div>
-    </div>
-    <!-- Latest Posts -->
-    <div class="c-latest-posts"> 
-      <div class="c-latest-posts__title-container">
-         <h2 class="c-latest-posts__title">Latest Posts</h2>
-         <div class="c-latest-posts__arrow-container">
-      <div class="c-latest-posts__view-all">View All</div>
-      <div class="e-arrow">
-          <a href="#">
-          <svg width="24" height="12">
-            <use xlink:href="./manifest.svg#arrow"></use>
-          </svg>
-          </a>
-        </div>
-        </div>
-      </div>
-      <div class="c-latest-posts__flex-container">
-        <div class="c-interface-design">
-          <div class="c-interface-design__img-container">
-            <img src="./assets-manifest/home-mobile/interface-design-img.png" alt="Interface Design Image">
-          </div>
-          <div class="c-interface-design__text-container">
-            <div class="c-interface-design__description">Interface Design</div>
-            <div class="c-interface-design__date">8 June, 2020</div>
-          </div>
-          <div class="c-interface-design__title">UX traffic light colours</div>
-          <p class="c-interface-design__text">UI has to make a huge visual difference between warning, an alert and a success.</p>
-        </div>
-        <div class="c-technology">
-          <div class="c-technology__img-container">
-            <img src="./assets-manifest/home-mobile/technology-img.png" alt="Technology Image">
-          </div>
-          <div class="c-technology__text-container">
-            <div class="c-technology__description">Technology</div>
-            <div class="c-technology__date">6 May, 2020</div>
-          </div>
-          <div class="c-technology__title">Using UX Design to Build a Sustainable Future</div>
-          <p class="c-technology__text">Transformation has to be driven by everybody, not just by climate groups.</p>
-        </div>
-        <div class="c-visual-design">
-          <div class="c-visual-design__img-container">
-            <img src="./assets-manifest/home-mobile/visual-design-img.png" alt="Visual Design Image">
-          </div>
-          <div class="c-visual-design__text-container">
-            <div class="c-visual-design__description">Visual Design</div>
-            <div class="c-visual-design__date">8 June, 2020</div>
-          </div>
-          <div class="c-visual-design__title">Creativity vs. UX</div>
-          <p class="c-visual-design__text">Is it possible to create a delightful user experience without following best UX practices?</p>
-        </div>
-      </div>
-</div>
-<!-- Need a Project? -->
-<footer class="c-project">
-  <div class="c-project__contacts">
-    <h2 class="c-project__title">Need a project?</h2>
-  <div class="c-project__telephone"><a href="tel:2395550108" class="c-project__link">(239) 555-0108</a></div>
-  <div class="c-project__mail"><a href="mailto:tanya.hill@example.com" class="c-project__link">tanya.hill@example.com</a></div>
-  </div>
-  <ul class="c-project__networks">
-    <li class="c-project__network"><a href="#" class="c-project__network-link">Facebook</a></li>
-    <li class="c-project__network"><a href="#" class="c-project__network-link">Instagram</a></li>
-    <li class="c-project__network"><a href="#" class="c-project__network-link">Dribble</a></li>
-    <li class="c-project__network"><a href="#" class="c-project__network-link">Linkedin</a></li>
-  </ul>
-  <div class="c-project__copyright">&copy; Manifest Theme. Allrights reserved</div>
-  </footer>
-</div>
-
-  
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="./js/index.js"></script>
-  </div>
-</body>
-
+  </body>
+</html>

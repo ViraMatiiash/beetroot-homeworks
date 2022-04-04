@@ -1,4 +1,4 @@
-mixin svg(classes, uses)
+mixin svg(classes, svgClass, uses)
   div(class=classes)
-    svg
+    svg(class=svgClass)
       use(xlink:href=uses)

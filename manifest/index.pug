@@ -1,0 +1,23 @@
+include ./src/index
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- Favicon
+    link(rel="shortcut icon", href="./favicon.ico", type="image/x-icon")
+    //- Styles
+    link(rel="stylesheet", href="./index.css")
+    title Manifest
+  body 
+    header.c-header 
+      .c-logo
+        img.c-logo__image(src="./assets-manifest/icons/manifest-logo.svg", alt="Manifest Logotype")
+      //- * Треба зробити з навігації міксін - може у темплейті Артура є
+      .c-header__nav-container
+        +navigation()
+        label(for="magnifier") 
+          input(type="text" name="magnifier")
+          img(src="./assets-manifest/icons/magnifier-icon.svg", alt="Magnifier")

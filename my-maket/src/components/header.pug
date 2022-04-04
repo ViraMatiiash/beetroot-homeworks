@@ -3,9 +3,12 @@ include ./navigation
 mixin header()
   header.c-header 
     .c-header__wrapper
-      +svg('logo', './future-lease.svg#logo')
-      +navigation('#', 'Home')
-      .header__icons
-        +svg('icon-facebook', './future-lease.svg#facebook')
-        +svg('icon-twitter', './future-lease.svg#twitter')
-        +svg('icon-linkeid', './future-lease.svg#linkedin')   
+      +svg('c-logo', 'c-logo__icon', './future-lease.svg#logo')
+      +navigation('#', 'CARS', '#', 'ABOUT US', '#', 'REVIEWS', '#', 'NEWS', '#', 'OUR CONTACTS')
+      .c-header__icons
+        +svg('c-header__icon-container', 'c-header__icon c-header__icon--facebook', './future-lease.svg#facebook')
+          a(href="https://www.facebook.com/").e-icon__link 
+        +svg('c-header__icon-container', 'c-header__icon c-header__icon--twitter', './future-lease.svg#twitter')
+          a(href="https://twitter.com/").e-icon__link
+        +svg('c-header__icon-container', 'c-header__icon c-header__icon--linkedin', './future-lease.svg#linkedin') 
+          a(href="https://www.linkedin.com/").e-icon__link  

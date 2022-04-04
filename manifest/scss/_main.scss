@@ -1,11 +1,9 @@
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "./media-queries.scss/mobile";
-@import "./media-queries.scss/tablet-landscape";
-@import "./media-queries.scss/desktop";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-// Page styles, tag styles
 body {
   background-color: map-get($colors, "background-color");
   min-height: 100vh;

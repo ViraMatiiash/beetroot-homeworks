@@ -9,10 +9,30 @@
   background-size: cover;
 
   &__wrapper {
-    display: flex;
-    
+    @include flexSpaceBetween;
     width: 100%;
-    height: 100%;
+    max-width: 1200px;
+    height: 36px;
     max-width: 1440px;
+    margin: 0 120px;
+    padding: 10px 15px;
+  }
+
+  &__icons {
+    @include flexSpaceBetween;
+    width: 100%;
+    max-width: 148px;
+  }
+
+  &__icon-container {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+  &__icon {
+    fill: map-get($colors, "button-bg");
   }
 }
+
+

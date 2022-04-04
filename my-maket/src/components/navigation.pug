@@ -1,5 +1,18 @@
-mixin navigation(href, text)
+mixin navigation(href, text, href1, text1, href2, text2, href3, text3, href4, text4)
   nav.c-navigation
     ul.c-navigation__list 
       li.c-navigation__item
         a.c-navigation__link(href=href)=text
+      .c-navigation__line
+      li.c-navigation__item
+        a.c-navigation__link(href=href1)=text1
+      .c-navigation__line
+      li.c-navigation__item
+        a.c-navigation__link(href=href2)=text2
+      .c-navigation__line
+      li.c-navigation__item
+        a.c-navigation__link(href=href3)=text3
+      .c-navigation__line
+      li.c-navigation__item
+        a.c-navigation__link(href=href4)=text4 
+      .c-navigation__line

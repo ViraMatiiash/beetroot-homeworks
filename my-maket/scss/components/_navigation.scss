@@ -1,0 +1,7 @@
+.c-navigation {
+    max-width: 512px;
+    
+  &__list {
+    @include flexSpaceBetween;
+  }
+}
