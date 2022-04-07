@@ -1,0 +1,52 @@
+.c-menu {
+  @media (min-width: 960px) {
+    display: none;
+  }
+
+  position: relative;
+  @include flexSpaceBetween;
+  width: 24px;
+  height: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &__burger {
+    width: 24px;
+    height: 2px;
+    background: map-get($colors, "heading");
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: map-get($colors, "heading");
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__burger::before {
+    transform: translateY(-7px);
+  }
+
+  &__burger::after {
+    transform: translateY(7px);
+  }
+
+  // Animation
+  &.open &__burger {
+    background: transparent;
+  }
+
+  &.open &__burger::before {
+    transform: rotate(45deg);
+  }
+
+  &.open &__burger::after {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".c-menu");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const nav = document.querySelector(".c-navigation");
-navOn = false;
+// const nav = document.querySelector(".c-navigation");
+// navOn = false;
 
 

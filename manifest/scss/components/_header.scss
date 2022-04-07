@@ -1,0 +1,32 @@
+.c-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include flexSpaceBetween;
+  margin-top: 100px;
+
+  @media (max-width: 960px) {
+    .c-navigation {
+      display: none;
+    } 
+
+    margin-top: 26px;
+  }
+
+  &__nav-container {
+    @include flexSpaceBetween;
+  }
+
+  &__burger-wrapper {
+    @include flexSpaceBetween;
+  }
+
+  &__magnifier-container {
+    max-width: 16px;
+    max-height: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+
+  }
+}

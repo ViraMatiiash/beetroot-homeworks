@@ -49,106 +49,12 @@ li {
   list-style: none;
 }
 
-// * Header
-
-.header {
-  @include flexSpaceBetween;
-
-  &__container {
-    @include flexSpaceBetween;
-  }
-}
-
-// Carousel
-.carousel-inner__custom {
-  padding-left: 1.5rem;
-  @include pagePadding;
-}
-
-.carousel-item__custom {
-  width: 100%;
-  margin-top: 2.5rem;
-}
-
-.carousel__text {
-  margin-top: 1rem;
-}
-
-// Description
-
-.c-description {
-  @include flexSpaceBetween;
-  flex-wrap: wrap;
-}
-
-// Latest Posts
-
-.c-latest-posts {
-  &__arrow-container {
-    @include flexSpaceBetween;
-    width: 6.25rem;
-  }
-
-  &__view-all {
-    color: map-get($colors, "description");
-
-    font: {
-      size: map-get($font-sizes, "main");
-      weight: normal;
-    }
-  }
-
-  &__title {
-    color: map-get($colors, "heading");
-    letter-spacing: 2px;
-
-    font: {
-      family: $ff-headings;
-      size: map-get($font-sizes, "subtitle");
-      weight: normal;
-    }
-  }
-}
-
-// Interface Design
-
-.c-interface-design,
-.c-technology,
-.c-visual-design {
-  &__text-container {
-    font-size: map-get($font-sizes, "description");
-    color: map-get($colors, "description");
-  }
-
-  &__title {
-    @extend .c-latest-posts__title;
-  }
-
-  &__text {
-    @extend .c-description__text;
-  }
-}
-
-// Need a project?
-
-.c-project {
-  background-color: map-get($colors, "footer-background");
-  @include pagePadding;
+.container {
+  padding: 0 40px;
   
-  &__network-link, &__link {
-    color: map-get($colors, "heading"); 
-    font-size: map-get($font-sizes, "main");
+  @media screen and (max-width: 1440px) {
+    width: 100%;
+  }
+    
   }
 
-  &__title {
-    letter-spacing: 2px;
-  }
-
-  &__copyright {
-    color: map-get($colors, "heading"); 
-    font-size: map-get($font-sizes, "description");
-  }
-
- 
-  
-}

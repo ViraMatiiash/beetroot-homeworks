@@ -1,5 +1,12 @@
-mixin navigation()
-  nav.c-navigation 
+mixin navigation(values)
+  - const navClass = "c-navigation"
+  nav(class= navClass) 
+    ul(class= navClass + "__list") 
+      each val in values 
+        li(class= navClass + "__item")
+          a(class= navClass + "__link" src= val.link)= val.text
+
+- const values = [{text: 'HOME', link: '#'}, {text: 'ABOUT', link: '#'}, {text: 'WORKS', link: '#'}, {text: 'BLOG', link: '#'}, {text: 'CONTACT', link: '#'}]
     
 
 

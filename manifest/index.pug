@@ -12,12 +12,14 @@ html(lang="en")
     link(rel="stylesheet", href="./index.css")
     title Manifest
   body 
-    header.c-header 
+    header.container.c-header 
       .c-logo
         img.c-logo__image(src="./assets-manifest/icons/manifest-logo.svg", alt="Manifest Logotype")
-      //- * Треба зробити з навігації міксін - може у темплейті Артура є
       .c-header__nav-container
-        +navigation()
-        label(for="magnifier") 
-          input(type="text" name="magnifier")
-          img(src="./assets-manifest/icons/magnifier-icon.svg", alt="Magnifier")
+        +navigation(values)
+        .c-header__burger-wrapper
+          .c-header__magnifier-container
+            img.c-header__magnifier(src="./assets-manifest/icons/magnifier-icon.svg", alt="Magnifier")
+          .c-menu
+            .c-menu__burger
+    script(src="./js/index.js") 

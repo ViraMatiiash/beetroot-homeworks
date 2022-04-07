@@ -1,0 +1,17 @@
+.c-navigation {
+  font-size: map-get($font-sizes, "description");
+  letter-spacing: 2px;
+
+  &__list {
+    @include flexSpaceBetween;
+    
+  }
+
+  &__item {
+    margin-right: 52px;
+  }
+
+  &__link {
+    color: map-get($colors, "heading");
+  }
+}
