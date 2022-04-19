@@ -15,8 +15,18 @@ img {
   width: 100%;
 }
 
+.firework-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .firework {
-  max-width: 300px;
+  max-width: 240px;
+  max-height: 240px;
+}
+
+.firework--one {
+  margin-bottom: 20px;
 }
 
 .giga {
