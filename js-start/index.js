@@ -16,7 +16,7 @@
 // Перевірка на 18 років
 function sufficientAge() {
   let age = confirm("Артур, тобі є 18? Далі шок-контент.");
-  age ? alert("Ну ок, поїхали :)") : alert("Ой нє, ще рано!!!");
+  return age ? alert("Ну ок, поїхали :)") : alert("Ой нє, ще рано!!!");
 }
 sufficientAge();
 
