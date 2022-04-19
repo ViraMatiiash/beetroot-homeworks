@@ -1,3 +1,9 @@
 mixin link(args={}) 
   -	const linkHref = args && args.href ? args.href : "#"
-  -	const linkText = args.text  || "default link text"
+  -	const linkText = args.text  || "default link text";
+
+//- Arrow Link
+mixin arrow()
+  a.arrow__link
+    svg.e-arrow
+      use(xlink:href="./manifest.svg#arrow")

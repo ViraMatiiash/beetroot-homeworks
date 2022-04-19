@@ -349,10 +349,15 @@ body {
   font-size: 16px;
   color: #000;
   font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
-h1 {
+h1, h2, h3 {
+  text-decoration: none;
+  font-size: medium;
   font-weight: normal;
+  line-height: normal;
 }
 
 img {
@@ -361,24 +366,13 @@ img {
 
 svg {
   width: 100%;
-  vertical-align: middle;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
   transition: all 0.2s ease-in-out;
-  margin-bottom: 1rem;
-  padding-bottom: 0.1rem;
-}
-a:hover:not(.e-arrow) {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-  border-radius: 1px;
-}
-a:active, a:focus {
-  color: #ffa500;
-  border-color: #ffa500;
 }
 
 li {
@@ -388,9 +382,9 @@ li {
 .container {
   padding: 0 40px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 576px) {
   .container {
-    width: 100%;
+    padding: 0 16px;
   }
 }
 
@@ -448,7 +442,6 @@ li {
 .c-navigation__list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .c-navigation__item {
   margin-right: 52px;
@@ -465,6 +458,7 @@ li {
   justify-content: space-between;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 120px;
 }
 @media (max-width: 960px) {
   .c-header {
@@ -472,6 +466,11 @@ li {
   }
   .c-header .c-navigation {
     display: none;
+  }
+}
+@media (max-width: 576px) {
+  .c-header {
+    margin-bottom: 74px;
   }
 }
 .c-header__nav-container {
@@ -482,7 +481,6 @@ li {
 .c-header__burger-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .c-header__magnifier-container {
   max-width: 16px;
@@ -490,6 +488,121 @@ li {
   display: flex;
   align-items: center;
   margin-right: 12px;
+}
+
+.c-manifest {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.c-manifest__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  width: 100%;
+  max-width: 692px;
+  margin-bottom: 128px;
+}
+@media screen and (max-width: 768px) {
+  .c-manifest__title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .c-manifest__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .c-manifest__title {
+    text-align: left;
+  }
+}
+
+.c-profession {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .c-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.c-profession__title-container {
+  width: 100%;
+  max-width: 420px;
+}
+@media screen and (max-width: 1040px) {
+  .c-profession__title-container {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-profession__title-container {
+    max-width: 410px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .c-profession__title-container {
+    max-width: 410px;
+    text-align: left;
+  }
+}
+.c-profession__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 576px) {
+  .c-profession__title {
+    font-size: 20px;
+  }
+}
+.c-profession__title:last-of-type {
+  margin-bottom: 48px;
+}
+.c-profession__arrow-container {
+  max-width: 28px;
+  height: 19px;
+}
+@media screen and (max-width: 768px) {
+  .c-profession__arrow-container {
+    margin-bottom: 48px;
+  }
+}
+.c-profession .arrow__link {
+  width: 100%;
+}
+.c-profession__description-container {
+  width: 100%;
+  max-width: 480px;
+}
+@media screen and (max-width: 768px) {
+  .c-profession__description-container {
+    max-width: 410px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .c-profession__description-container {
+    max-width: 410px;
+    text-align: left;
+  }
+}
+.c-profession__description {
+  font-size: 20px;
+  color: #565656;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .c-profession__description {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -3,8 +3,7 @@
   letter-spacing: 2px;
 
   &__list {
-    @include flexSpaceBetween;
-    
+    @include flexSpaceBetween;  
   }
 
   &__item {

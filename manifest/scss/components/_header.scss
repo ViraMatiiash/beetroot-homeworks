@@ -3,18 +3,24 @@
   max-width: 1200px;
   margin: 0 auto;
   @include flexSpaceBetween;
+  align-items: center;
   margin-top: 100px;
+  margin-bottom: 120px;
 
   @media (max-width: 960px) {
     .c-navigation {
       display: none;
     } 
-
     margin-top: 26px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 74px;
   }
 
   &__nav-container {
     @include flexSpaceBetween;
+    align-items: center;
   }
 
   &__burger-wrapper {

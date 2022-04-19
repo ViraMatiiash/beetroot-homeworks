@@ -1,0 +1,84 @@
+.c-profession {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include flexSpaceBetween;
+
+  @media screen and (max-width: 768px) {
+    @include flexColumn;
+  }
+
+  // Title Container
+
+  &__title-container {
+    width: 100%;
+    max-width: 420px;
+
+    @media screen and (max-width: 1040px) {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 410px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 410px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-family: $ff-headings;
+    font-size: map-get($font-sizes, "subtitle");
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 576px) {
+      font-size: map-get($font-sizes, "profession");
+    }
+  }
+
+  &__title:last-of-type {
+    margin-bottom: 48px;
+  }
+
+  &__arrow-container {
+    max-width: 28px;
+    height: 19px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .arrow__link {
+    width: 100%;
+  }
+
+  // Description
+  &__description-container {
+    width: 100%;
+    max-width: 480px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 410px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 410px;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    font-size: map-get($font-sizes, "profession");
+    color: map-get($colors, "text");
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 576px) {
+      font-size: map-get($font-sizes, "main");
+    }
+  }
+}

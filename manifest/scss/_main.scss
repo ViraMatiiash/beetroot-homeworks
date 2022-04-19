@@ -10,10 +10,15 @@ body {
   font-size: map-get($font-sizes, "main");
   color: map-get($colors, "heading");
   font-family: $ff-text;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
-h1 {
+h1, h2, h3 {
+  text-decoration: none;
+  font-size:medium;
   font-weight: normal;
+  line-height: normal;
 }
 
 img {
@@ -22,27 +27,20 @@ img {
 
 svg {
   width: 100%;
-  vertical-align: middle;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
   color: map-get($colors, "background");
   transition: all 0.2s ease-in-out;
-  margin-bottom: 1rem;
-  padding-bottom: 0.1rem;
 
-  &:hover:not(.e-arrow) {
-    color: map-get($colors, "background");
-    border-bottom: 2px solid map-get($colors, "background");
-    border-radius: 1px;
-  }
 
-  &:active,
-  &:focus {
-    color: map-get($colors, "active");
-    border-color: map-get($colors, "active");
-  }
+  // &:active,
+  // &:focus {
+  //   color: map-get($colors, "active");
+  //   border-color: map-get($colors, "active");
+  // }
 }
 
 li {
@@ -51,10 +49,8 @@ li {
 
 .container {
   padding: 0 40px;
-  
-  @media screen and (max-width: 1440px) {
-    width: 100%;
-  }
-    
-  }
 
+  @media screen and (max-width: 576px) {
+    padding: 0 16px;
+  }
+}
