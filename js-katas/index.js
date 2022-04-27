@@ -131,3 +131,17 @@ const toHex = (n) => {
 console.log(colorOf(255, 0, 0));
 console.log(colorOf(0, 111, 0));
 console.log(colorOf(1, 2, 3));
+
+// 19. Функція перше ділить вказаний стрінг на слова, потім кожне слово на символи, потім об'єднує ці символи назад у слова з конкретним заданим сепаратором між символами.
+function splitAndMerge(string, separator) {
+  let words = string.split(' ');
+  console.log(words);
+  let char = string.split('');
+  console.log(char);
+  return char.join(separator);
+}
+
+console.log(splitAndMerge('My name is John', ' '));
+console.log(splitAndMerge('My name is John', '-'));
+console.log(splitAndMerge('Hello World!', '.'));
+console.log(splitAndMerge('Hello World!', ','));
