@@ -13,7 +13,8 @@ const digitize = (n) => String(n).split('').map(Number).reverse();
 console.log(digitize(123456));
 
 // 4. Функція, яка чистить заданий стрінг від цифр
-const stringClean = (s) => s.replace(/[0-9]/g, '');
+const regExNumbers = /[0-9]/g;
+const stringClean = (s) => s.replace(regExNumbers, '');
 console.log(stringClean('Fami14ly95'));
 
 // 5. Функція, яка визначає, чи задане число ділиться на два наступних заданих числа
@@ -44,7 +45,7 @@ console.log(correct('505'));
 
 // 8. Функція бере за аргумент масив із стрінгів, розділених комами. На виході має бути масив символів, розділених пробілами. Якщо масив складається з пустого стрінга, дорівнює 2 і менше символів, тоді повертає null.
 const array = (arr) => arr.split(',').slice(1, -1).join('') || null;
-console.log(array('1, 2, 3, 4'));
+console.log(array(''));
 
 // 9. Функція, яка повертає n-не парне число. Аргументом виступає номер парного числа, якщо рахувати від нуля.
 const nthEven = (n) => n * 2 - 2;
@@ -140,7 +141,6 @@ function splitAndMerge(string, separator) {
   console.log(char);
   return char.join(separator);
 }
-
 console.log(splitAndMerge('My name is John', ' '));
 console.log(splitAndMerge('My name is John', '-'));
 console.log(splitAndMerge('Hello World!', '.'));
