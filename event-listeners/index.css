@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(69, 69, 69);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+.square--red {
+  background-color: red;
+}
+.square--green {
+  background-color: rgb(168, 245, 46);
+}
+.square--pink {
+  background-color: pink;
+}
+.square--yellow {
+  background-color: yellow;
+}
+.square--blue {
+  background-color: rgb(64, 136, 238);
+}
+.square--red {
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */
