@@ -23,13 +23,13 @@ body {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 .c-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   margin-bottom: 40px;
   padding-top: 40px;
   height: 50px;
@@ -45,6 +45,8 @@ body {
 .shopping-list__container {
   width: 100%;
   max-width: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 20px;
   margin: 0 auto;
@@ -84,6 +86,8 @@ body {
 }
 .shopping-list__btn {
   font-family: "Roboto", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 26px;
   font-size: 18px;
@@ -140,6 +144,4 @@ body {
 .shopping-list__remove:hover, .shopping-list__btn:hover {
   background-color: #575757;
   color: #e8eaed;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
