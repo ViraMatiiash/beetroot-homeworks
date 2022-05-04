@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <div class="c-wrapper">
+      <header class="c-header">
+        <h2 class="c-header__title">My Shopping List</h2>
+      </header>
+      <div class="shopping-list__container">
+        <div class="shopping-list__field">
+          <input id="js-list-input" type="text" placeholder="What would you like to buy?" class="shopping-list__input">
+          <button id="js-btn" type="button" class="shopping-list__btn">
+            <span>Add</span>
+          </button>
+        </div>
+        <ol id="js-shopping-list" class="shopping-list">
+        </ul>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

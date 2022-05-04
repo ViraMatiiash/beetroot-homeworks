@@ -15,10 +15,9 @@ const factorialize = (num) => {
 };
 console.log(factorialize(4));
 
-
 // Функція, яка перетворює три числа в одне
 const numbers = (num1, num2, num3) => {
-  const numToString = "" + num1 + num2 + num3; // Додаємо спочатку порожній стрінг
+  const numToString = '' + num1 + num2 + num3; // Додаємо спочатку порожній стрінг
   const stringToNum = +numToString; // Перетворюємо стрінг назад на число
   return stringToNum;
 };
@@ -42,7 +41,6 @@ console.log(rectSquare(4, 5));
 
 // Функція, що повертає ідеальне число
 
-
 function perfectNumber(number) {
   let sum = 0;
   for (let i = 1; i < number; i++) {
@@ -58,7 +56,6 @@ function perfectNumber(number) {
 }
 console.log(perfectNumber(28));
 
-
 // Функція, яка має мінімальне і максимальне число і виводить з діапазону тільки ідеальні числа
 // ! Ця функція недописана, бо ще не додумалась, як то зробити :)
 
@@ -73,4 +70,3 @@ console.log(perfectNumber(28));
 // };
 
 // console.log(isPerfect(1, 29));
-

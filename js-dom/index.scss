@@ -1,0 +1,160 @@
+@import './variables';
+@import './mixins';
+
+// Static styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: $c-middle-grey;
+  font-family: $f-main;
+  font-size: $fs-base;
+  font-weight: $fw-regular;
+}
+
+// Main styles
+.c-wrapper {
+  background-color: $c-grey;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+// Header
+.c-header {
+  @include flexCenter;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  height: 50px;
+
+  &__title {
+    color: $c-white;
+  }
+}
+
+// Shopping List
+.shopping-list {
+  width: 100%;
+  margin-bottom: 20px;
+
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: 440px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 1032px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    font-size: $fs-input;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+
+    @media screen and (max-width: 440px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: $fs-base;
+      padding: 7px 27px;
+    }
+  }
+
+  &__btn {
+    font-family: $f-main;
+    width: fit-content;
+    padding: 10px 26px;
+    font-size: $fs-input;
+    cursor: pointer;
+    background-color: $c-btn-bg;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+
+    @media screen and (max-width: 440px) {
+    font-size: $fs-base;
+    padding: 7px 22px;
+    align-self: end;
+    }
+  }
+
+  &__item {
+    color: $c-white;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: $fs-input;
+
+    @media screen and (max-width: 440px) {
+    font-size: $fs-base;
+    }
+  }
+
+  .clicked {
+    text-decoration: line-through;
+  }
+
+  &__item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__remove {
+    background-color: $c-btn-bg;
+    font-size: $fs-input;
+    font-family: $f-main;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+
+    @media screen and (max-width: 440px) {
+    font-size: $fs-base;
+    align-self: end;
+    padding: 7px;
+    }
+  }
+
+  &__remove:hover,
+  &__btn:hover {
+    background-color: $c-btn-hover;
+    color: $c-white;
+  }
+
+
+ 
+}
