@@ -1,0 +1,117 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.base-page-link {
+  color: $c-white;
+}
+
+h1 {
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  background-color: $c-middle-grey;
+  font-family: $f-main;
+  font-size: $fs-base;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background-color: $c-grey;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.c-form {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: $c-white;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+
+    @media screen and (max-width: 440px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__label {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    align-self: start;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: $fs-base;
+    border: 2px solid transparent;
+
+    @media screen and (max-width: 440px) {
+      font-size: 13px;
+    }
+  }
+
+  &__input:focus {
+    border: 2px solid $c-focus-border;
+    background-color: $c-focus-bg;
+  }
+
+  &__button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    font-size: $fs-base;
+    font-family: $f-main;
+    background-color: $c-btn-bg;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 440px) {
+      font-size: 13px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $c-btn-hover;
+    color: $c-white;
+  }
+}
+
+.error {
+  border: 2px solid $c-error-border;
+  background-color: $c-error-bg;
+}

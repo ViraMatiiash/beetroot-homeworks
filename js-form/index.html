@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div>
+        <a href="../index.html" class="base-page-link">Homework Base Page</a>
+    </div>
+    <!-- Form -->
+    <div class="container">
+    <form class="c-form" id="js-form" method="post">
+      <h2 class="c-form__title">Registration</h2>
+      <div class="c-form__wrapper">
+        <!-- Name -->
+        <label class="c-form__label">
+          <span class="c-form__item"> Name </span>
+          <input id="js-form-first-name" placeholder="Type your first name" type="text" name="firstName" class="c-form__input c-form__input--first-name" />
+        </label>
+        <!-- Last Name -->
+        <label class="c-form__label">
+          <span class="c-form__item"> Last Name </span>
+          <input id="js-form-last-name" placeholder="Type your last name" type="text" name="lastName" class="c-form__input c-form__input--last-name" />
+        </label>
+        <!-- Email -->
+        <label class="c-form__label">
+          <span class="c-form__item"> Email </span>
+          <input id="js-form-email" placeholder="Type your email adress" type="text" name="email" class="c-form__input c-form__input--email" />
+        </label>
+        <!-- Phone -->
+        <label class="c-form__label">
+          <span class="c-form__item"> Phone </span>
+          <input id="js-form-phone" 
+          placeholder="Type your phone number" type="text" name="phone" class="c-form__input c-form__input--phone" />
+        </label>
+        <button type="submit" class="c-form__button">
+          <span>Sign Up</span>
+        </button>
+      </div>
+    </form>
+    </div>
+    <script defer type="module" src="./index.js"></script>
+  </body>
+</html>
