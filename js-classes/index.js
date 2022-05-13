@@ -15,12 +15,9 @@ class Marker {
 
   inkAmount(string) {
     console.log(`Your text is ${this.color}`);
-    let usedInk = this.ink - +string.replaceAll(' ', '').length / 2;
-    if (usedInk > 5) {
-      return `Your have ${usedInk}% ink yet.`;
-    } else {
-      return 'There is almost no ink in your marker. You need to fill it!';
-    }
+    return this.ink - +string.replaceAll(' ', '').length / 2 > 5
+      ? `Your have ${this.ink}% ink yet.`
+      : 'There is almost no ink in your marker. You need to fill it!';
   }
 }
 
@@ -32,12 +29,13 @@ console.log(
   ) // Перевірка на відсутність чорнила
 );
 
-class newMarker extends Marker {
+class FillMarker extends Marker {
   constructor(color, ink) {
     super(color, ink);
   }
 
   fillInk(string) {
+    super.inkAmount;
     console.log(`Your text is ${this.color}`);
     let usedInk = this.ink - +string.replaceAll(' ', '').length / 2;
     if (usedInk > 5) {
@@ -49,7 +47,7 @@ class newMarker extends Marker {
   }
 }
 
-const orangeMarker = new newMarker('orange', 100);
+const orangeMarker = new FillMarker('orange', 100);
 console.log(orangeMarker.fillInk('Ich schreibe auf Deutsch wieder.'));
 console.log(
   orangeMarker.fillInk(
@@ -57,15 +55,14 @@ console.log(
   )
 );
 
-
 // ! 2. Створити клас Person, де конструктор приймає 4 аргументи. Прописати метод, який покаже повне ім'я користувача. Створити метод, який буде вітати
 
 class Person {
-  constructor(firstName = 'John', lastName = 'Doe', age = 0, gender = 'Male') {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.gender = gender;
+  constructor(args) {
+    this.firstName = args.firstName || 'John';
+    this.lastName = args.lastName || 'Doe';
+    this.age = args.age || 0;
+    this.gender = args.gender || 'Male';
   }
 
   sayFullName() {
@@ -93,10 +90,8 @@ console.log(user1);
 // Перевірка на метод greetExtraTerrestrials
 console.log(user1.greetExtraTerrestrials('Martians'));
 
-
 // ! 3. Екстенди з класу першого порядку
 // * Клас Animals
-
 class Animal {
   constructor(name, age, legs, species, status) {
     this.name = name;
@@ -118,7 +113,7 @@ class Shark extends Animal {
   }
 }
 
-const sharkBilly = new Shark("Billy", 3, "Alive and well");
+const sharkBilly = new Shark('Billy', 3, 'Alive and well');
 console.log(sharkBilly);
 console.log(sharkBilly.introduce());
 
@@ -151,10 +146,9 @@ class Dog extends Animal {
   }
 }
 
-const dogRichy = new Dog("Richy", 12, "Serving his master", "Eliza");
+const dogRichy = new Dog('Richy', 12, 'Serving his master', 'Eliza');
 console.log(dogRichy);
 console.log(dogRichy.introduce());
-
 
 // ! 4. Реалізуй клас, що описує коло. У класі повинні бути такі компоненти:
 
@@ -196,3 +190,85 @@ circle.circleRadius = 7; // З допомогою сеттера переназ�
 console.log(circle.circleRadius);
 console.log(circle.circleSquare()); // викликаємо метод, який обчислює площу круга
 console.log(circle.circleLength()); // викликаємо метод, який обчислює довжину кола
+
+// ! 5. Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
+
+// Реалізуй клас EmpTable для генерації HTML-коду таблиці зі списком працівників банку. Масив працівників необхідно передавати через конструктор, а отримувати HTML-код за допомогою методу getHtml ().
+
+// Створи об'єкт класу EmpTable і виведи на екран результат роботи методу getHtml ().
+
+class EmpTable {
+  constructor(params) {
+    this.employeeList = params.employeeList || [];
+  }
+
+  getHTML() {
+    const table = document.createElement('table');
+
+    table.border = 3;
+    table.borderColor = '#000000';
+    const thead = document.createElement('thead');
+    const th1 = document.createElement('th');
+    th1.innerText = "Ім'я";
+    const th2 = document.createElement('th');
+    th2.innerText = 'Призвіще';
+    const th3 = document.createElement('th');
+    th3.innerText = 'Зарплата';
+    thead.appendChild(th1);
+    thead.appendChild(th2);
+    thead.appendChild(th3);
+    table.appendChild(thead);
+    this.employeeList.forEach((employee) => {
+      const tr = document.createElement('tr');
+      Object.keys(employee).forEach((key) => {
+        const td = document.createElement('td');
+        td.innerText = employee[key];
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    return table;
+  }
+
+  generateItem() {}
+}
+const employeeList = [
+  { name: 'John', lastName: 'Barker', salary: 1000 },
+  { name: 'Mike', lastName: 'Miller', salary: 1500 },
+  { name: 'Annie', lastName: 'Lang', salary: 1250 },
+];
+
+console.log(employeeList);
+const test = new EmpTable({ employeeList });
+console.log(test.getHTML());
+
+document.getElementById('js-table').appendChild(test.getHTML());
+
+// ! 6. Заекстендити класи для Адама і Єви із Human, а в класі God передати масив об'єктів.
+class God {
+  static create() {
+    return [Adam, Eve];
+  }
+}
+
+class Human {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Man extends Human {
+  constructor(name) {
+    super(name);
+  }
+}
+
+const Adam = new Man('Adam');
+
+class Woman extends Human {
+  constructor(name) {
+    super(name);
+  }
+}
+const Eve = new Woman('Eve');
+console.log(God.create());

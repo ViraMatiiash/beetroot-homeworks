@@ -15,7 +15,7 @@ const registration = (event) => {
   console.log(email);
   const phone = form.get('phone');
   console.log(phone);
-
+// localStorage.setItem('firstName', JSON.stringify(firstName));
   const generateId = (name) => {
     return `js-form-${name}`;
   };
@@ -25,5 +25,11 @@ const registration = (event) => {
   showError(generateId('email'), !email);
   showError(generateId('phone'), !phone);
 };
+
+
+
+
+
+
 
 export { registration };
